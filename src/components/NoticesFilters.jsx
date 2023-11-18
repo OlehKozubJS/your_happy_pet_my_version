@@ -12,21 +12,19 @@ const NoticesFilters = () => {
         (isByAgeOpen ? (
           <button>By age</button>
         ) : (
-          <div>
-            By age
+          <form>
             <label>up to 1 year</label>
             <label>up to 2 years</label>
             <label>from 2 years</label>
-          </div>
+          </form>
         ))(
           isByGenderOpen ? (
             <button>By gender</button>
           ) : (
-            <div>
-              By gender
+            <form>
               <label>female</label>
               <label>male</label>
-            </div>
+            </form>
           )
         )}
     </div>
