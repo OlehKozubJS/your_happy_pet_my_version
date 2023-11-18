@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
 const NoticesCategoriesItem = () => {
-    return();
+  return (
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 };
