@@ -14,7 +14,10 @@ const NoticesCategoriesItem = () => {
           <div></div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <h3>Сute dog looking for a home</h3>
+        <button>Learn more</button>
+      </div>
     </div>
   );
 };
