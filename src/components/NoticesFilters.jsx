@@ -18,7 +18,15 @@ const NoticesFilters = () => {
           <label>from 2 years</label>
         </div>
       )}
-      {isByGenderOpen ? <button>By gender</button> : <div></div>}
+      {isByGenderOpen ? (
+        <button>By gender</button>
+      ) : (
+        <div>
+          By gender
+          <label>female</label>
+          <label>male</label>
+        </div>
+      )}
     </div>
   );
 };
