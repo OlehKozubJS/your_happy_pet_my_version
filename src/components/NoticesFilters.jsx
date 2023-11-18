@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 const NoticesFilters = () => {
+  const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
 
