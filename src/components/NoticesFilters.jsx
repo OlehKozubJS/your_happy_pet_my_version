@@ -9,7 +9,7 @@ const NoticesFilters = () => {
     <div>
       <button>Filters</button>
       {isFiltersOpen &&
-        (<button>By age</button>(
+        (<button>By age</button>)(
           isByAgeOpen && (
             <form>
               <label>up to 1 year</label>
@@ -17,15 +17,14 @@ const NoticesFilters = () => {
               <label>from 2 years</label>
             </form>
           )
-        )
-            <button>By gender</button>
-          ( isByGenderOpen && (
+        )(<button>By gender</button>)(
+          isByGenderOpen && (
             <form>
               <label>female</label>
               <label>male</label>
             </form>
-          ))
-        }
+          )
+        )}
     </div>
   );
 };
