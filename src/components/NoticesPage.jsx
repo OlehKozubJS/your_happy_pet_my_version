@@ -1,3 +1,3 @@
 const NoticesPage = () => {
-  return <h1></h1>;
+  return <h2>Find your favorite pet</h2>;
 };
