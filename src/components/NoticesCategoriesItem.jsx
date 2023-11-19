@@ -17,7 +17,7 @@ const NoticesCategoriesItem = ({ category, place, age, gender }) => {
       </div>
       <div>
         <h3>Сute dog looking for a home</h3>
-        <button>Learn more</button>
+        <Link to="">Learn more</Link>
       </div>
     </div>
   );
