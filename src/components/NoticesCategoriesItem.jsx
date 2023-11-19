@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NoticesCategoriesItem = ({ category, place, age, gender }) => {
+const NoticesCategoriesItem = ({
+  description,
+  category,
+  place,
+  age,
+  gender,
+}) => {
   return (
     <div>
       <div>
@@ -16,7 +22,7 @@ const NoticesCategoriesItem = ({ category, place, age, gender }) => {
         </div>
       </div>
       <div>
-        <h3>description</h3>
+        <h3>{description}</h3>
         <Link to="">Learn more</Link>
       </div>
     </div>
