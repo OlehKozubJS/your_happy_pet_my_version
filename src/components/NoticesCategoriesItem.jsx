@@ -22,3 +22,5 @@ const NoticesCategoriesItem = ({ category, place, age, gender }) => {
     </div>
   );
 };
+
+export { NoticesCategoriesItem };
