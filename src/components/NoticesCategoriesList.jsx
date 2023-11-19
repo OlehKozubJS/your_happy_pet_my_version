@@ -15,3 +15,5 @@ const NoticesCategoriesList = ({ items }) => {
     </div>
   );
 };
+
+export { NoticesCategoriesList };
