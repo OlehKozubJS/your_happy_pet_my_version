@@ -10,9 +10,9 @@ const NoticesCategoriesItem = ({ category, place, age, gender }) => {
         <button></button>
         <button></button>
         <div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>{place}</div>
+          <div>{age}</div>
+          <div>{gender}</div>
         </div>
       </div>
       <div>
