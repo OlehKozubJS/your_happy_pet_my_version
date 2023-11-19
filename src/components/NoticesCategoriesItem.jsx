@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NoticesCategoriesItem = () => {
+const NoticesCategoriesItem = ({ category, place, age, gender }) => {
   return (
     <div>
       <div>
