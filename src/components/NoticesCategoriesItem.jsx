@@ -6,7 +6,7 @@ const NoticesCategoriesItem = ({ category, place, age, gender }) => {
     <div>
       <div>
         <img src="" alt="" />
-        <div></div>
+        <div>{category}</div>
         <button></button>
         <button></button>
         <div>
