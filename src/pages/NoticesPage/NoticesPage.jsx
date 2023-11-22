@@ -24,7 +24,7 @@ const petsData = [
     category: 'in good hands',
   },
   {
-    id: 'pet-02',
+    _id: 'pet-02',
     name: 'Cat',
     type: 'lazy',
     imageLink:
@@ -36,7 +36,7 @@ const petsData = [
     description: 'Сute cat looking for a home',
   },
   {
-    id: 'pet-03',
+    _id: 'pet-03',
     name: 'Mouse',
     type: 'sneaky',
     imageLink:
@@ -48,7 +48,7 @@ const petsData = [
     description: 'Сute mouse looking for a home',
   },
   {
-    id: 'pet-04',
+    _id: 'pet-04',
     name: 'Frog',
     type: 'clumsy',
     imageLink:
@@ -60,7 +60,7 @@ const petsData = [
     description: 'Сute frog looking for a home',
   },
   {
-    id: 'pet-05',
+    _id: 'pet-05',
     name: 'Bat',
     type: 'scary',
     imageLink:
@@ -72,7 +72,7 @@ const petsData = [
     description: 'Сute bat looking for a home',
   },
   {
-    id: 'pet-06',
+    _id: 'pet-06',
     name: 'Elephant',
     type: 'big',
     imageLink:
@@ -84,7 +84,7 @@ const petsData = [
     description: 'Сute elephant looking for a home',
   },
   {
-    id: 'pet-07',
+    _id: 'pet-07',
     name: 'Lion',
     type: 'brave',
     imageLink:
@@ -96,7 +96,7 @@ const petsData = [
     description: 'Сute lion looking for a home',
   },
   {
-    id: 'pet-08',
+    _id: 'pet-08',
     name: 'Fox',
     type: 'cunning',
     imageLink:
@@ -108,7 +108,7 @@ const petsData = [
     description: 'Сute fox looking for a home',
   },
   {
-    id: 'pet-09',
+    _id: 'pet-09',
     name: 'Blue Whale',
     type: 'giant',
     imageLink:
@@ -120,7 +120,7 @@ const petsData = [
     description: 'Сute blue whale looking for a home',
   },
   {
-    id: 'pet-10',
+    _id: 'pet-10',
     name: 'Rabbit',
     type: 'fast',
     imageLink:
@@ -132,7 +132,7 @@ const petsData = [
     description: 'Сute rabbit looking for a home',
   },
   {
-    id: 'pet-11',
+    _id: 'pet-11',
     name: 'Hedgehog',
     type: 'spiky',
     imageLink:
@@ -144,7 +144,7 @@ const petsData = [
     description: 'Сute hedgehog looking for a home',
   },
   {
-    id: 'pet-12',
+    _id: 'pet-12',
     name: 'Fish',
     type: 'floatable',
     imageLink:
