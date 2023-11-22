@@ -17,7 +17,7 @@ const NoticesFilters = ({ onChange }) => {
     }
   };
 
-  const toggleAge = () => {
+  const toggleAgeFilter = () => {
     if (isByAgeOpen) {
       setIsByAgeOpen(false);
     } else {
@@ -25,7 +25,7 @@ const NoticesFilters = ({ onChange }) => {
     }
   };
 
-  const toggleGender = () => {
+  const toggleGenderFilter = () => {
     if (isByGenderOpen) {
       setIsByGenderOpen(false);
     } else {
@@ -46,9 +46,9 @@ const NoticesFilters = ({ onChange }) => {
       <button onClick={toggleFilters}>Filters</button>
       {isFiltersOpen && (
         <div>
-          <button onClick={toggleAge}>By age</button>
+          <button onClick={toggleAgeFilter}>By age</button>
           {isByAgeOpen && <AgeForm onChange={selectAge} />}
-          <button onClick={toggleGender}>By gender</button>
+          <button onClick={toggleGenderFilter}>By gender</button>
           {isByGenderOpen && <GenderForm onChange={selectGender} />}
         </div>
       )}
