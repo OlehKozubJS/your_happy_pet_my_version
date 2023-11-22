@@ -7,7 +7,7 @@ const NoticesFilters = () => {
 
   return (
     <div>
-      <button>Filters</button>
+      <button onClick={toggleFilters}>Filters</button>
       {isFiltersOpen &&
         (<button>By age</button>)(
           isByAgeOpen && (
@@ -25,7 +25,7 @@ const NoticesFilters = () => {
                 from 2 years
               </label>
             </form>
-          ),
+          )
         )(<button>By gender</button>)(
           isByGenderOpen && (
             <form>
@@ -38,7 +38,7 @@ const NoticesFilters = () => {
                 male
               </label>
             </form>
-          ),
+          )
         )}
     </div>
   );
