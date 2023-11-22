@@ -119,6 +119,13 @@ const petsData = [
 ];
 
 const NoticesPage = () => {
+  const calcYearDifference = oldDate => {
+    const newDate = new Date();
+    const dateDifference = new Date(newDate - oldDate);
+    const diffYears = dateDifference.getFullYear() - 1970;
+    return diffYears;
+  };
+
   return (
     <div>
       <h2>Find your favorite pet</h2>
