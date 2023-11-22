@@ -8,7 +8,7 @@ const AgeForm = ({ onChange }) => {
   };
 
   return (
-    <form onChange={handleChange}>
+    <form onInput={handleChange}>
       <label>
         <input type="checkbox" name="upToOneSelect" value={true} />
         up to 1 year
