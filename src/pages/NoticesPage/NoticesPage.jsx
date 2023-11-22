@@ -20,7 +20,7 @@ const petsData = [
     breed: 'friendly',
     price: '0$',
     favourite: true,
-    description0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
   {
