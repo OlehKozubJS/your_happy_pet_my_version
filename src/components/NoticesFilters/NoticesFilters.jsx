@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AgeForm } from './AgeForm';
 import { GenderForm } from './GenderForm';
 
@@ -6,8 +6,15 @@ const NoticesFilters = ({ onChange }) => {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
-  const [age, setAge] = useState(0);
-  const [gender, setGender] = useState('female');
+  const [age, setAge] = useState({
+    upToOne: false,
+    upToTwo: false,
+    fromTwo: false,
+  });
+  const [gender, setGender] = useState({
+    female: false,
+    male: false,
+  });
 
   const toggleFilters = () => {
     if (isFiltersOpen) {
@@ -41,12 +48,12 @@ const NoticesFilters = ({ onChange }) => {
     setGender(genderData);
   };
 
-  const handleFiltersData = () => {
+  useEffect(() => {
     onChange({ age, gender });
-  };
+  }, [age, gender, onChange]);
 
   return (
-    <div onChange={handleFiltersData}>
+    <div>
       <button onClick={toggleFilters}>Filters</button>
       {isFiltersOpen && (
         <div>
