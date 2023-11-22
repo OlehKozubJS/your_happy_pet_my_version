@@ -3,7 +3,11 @@ const AgeForm = ({ onChange }) => {
     event.preventDefault();
     const { upToOneSelect, upToTwoSelect, fromTwoSelect } =
       event.currentTarget.elements;
-    const ageData = {};
+    const ageData = {
+      upToOne: upToOneSelect,
+      upToTwo: upToTwoSelect,
+      fromTwo: fromTwoSelect,
+    };
     onChange(ageData);
   };
 
