@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AgeForm } from './AgeForm';
-import {} from './GenderForm';
+import { GenderForm } from './GenderForm';
 
 const NoticesFilters = () => {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
