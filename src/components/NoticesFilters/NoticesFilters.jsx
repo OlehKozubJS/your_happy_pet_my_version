@@ -31,6 +31,8 @@ const NoticesFilters = () => {
     }
   };
 
+  const select
+
   return (
     <div>
       <button onClick={toggleFilters}>Filters</button>
