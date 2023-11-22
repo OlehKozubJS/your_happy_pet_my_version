@@ -9,17 +9,17 @@ import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 
 const petsData = [
   {
-    id: 'pet-01',
+    _id: 'pet-01',
     category: 'in good hands',
-    imageLink:
+    avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
+    title: 'Сute dog looking for a home',
     name: 'Dog',
     type: 'friendly',
-
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-07-09',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
   {
     id: 'pet-02',
