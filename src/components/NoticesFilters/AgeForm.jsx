@@ -8,7 +8,6 @@ const AgeForm = ({ onChange }) => {
       upToTwo: upToTwoOption.checked ? true : false,
       fromTwo: fromTwoOption.checked ? true : false,
     };
-    console.log(ageData);
     onChange(ageData);
   };
 
