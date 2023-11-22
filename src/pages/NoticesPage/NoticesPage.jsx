@@ -26,7 +26,7 @@ const petsData = [
   {
     _id: 'pet-02',
     name: 'Cat',
-    type: 'lazy',
+    breed: 'lazy',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     place: 'Lviv',
@@ -38,7 +38,7 @@ const petsData = [
   {
     _id: 'pet-03',
     name: 'Mouse',
-    type: 'sneaky',
+    breed: 'sneaky',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -51,7 +51,7 @@ const petsData = [
   {
     _id: 'pet-04',
     name: 'Frog',
-    type: 'clumsy',
+    breed: 'clumsy',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -64,7 +64,7 @@ const petsData = [
   {
     _id: 'pet-05',
     name: 'Bat',
-    type: 'scary',
+    breed: 'scary',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -77,7 +77,7 @@ const petsData = [
   {
     _id: 'pet-06',
     name: 'Elephant',
-    type: 'big',
+    breed: 'big',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -90,7 +90,7 @@ const petsData = [
   {
     _id: 'pet-07',
     name: 'Lion',
-    type: 'brave',
+    breed: 'brave',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -103,7 +103,7 @@ const petsData = [
   {
     _id: 'pet-08',
     name: 'Fox',
-    type: 'cunning',
+    breed: 'cunning',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -116,7 +116,7 @@ const petsData = [
   {
     _id: 'pet-09',
     name: 'Blue Whale',
-    type: 'giant',
+    breed: 'giant',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -129,7 +129,7 @@ const petsData = [
   {
     _id: 'pet-10',
     name: 'Rabbit',
-    type: 'fast',
+    breed: 'fast',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -142,7 +142,7 @@ const petsData = [
   {
     _id: 'pet-11',
     name: 'Hedgehog',
-    type: 'spiky',
+    breed: 'spiky',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
 
@@ -155,7 +155,7 @@ const petsData = [
   {
     _id: 'pet-12',
     name: 'Fish',
-    type: 'floatable',
+    breed: 'floatable',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     place: 'Zaporizhzhia',
