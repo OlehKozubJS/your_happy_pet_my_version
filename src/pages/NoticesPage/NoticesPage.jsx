@@ -31,7 +31,7 @@ const petsData = [
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     place: 'Lviv',
     dateOfBirth: '2013-04-29',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute cat looking for a home',
     category: 'lost/found',
   },
@@ -44,7 +44,7 @@ const petsData = [
 
     place: 'Khmelnytskyi',
     dateOfBirth: '2015-03-13',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute mouse looking for a home',
     category: 'favorite ads',
   },
@@ -57,7 +57,7 @@ const petsData = [
 
     place: 'Lviv',
     dateOfBirth: '2019-06-06',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute frog looking for a home',
     category: 'my ads',
   },
@@ -70,7 +70,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-02-24',
-    gender: 'male',
+    sex: 'male',
     description: 'Сute bat looking for a home',
     category: 'sell',
   },
@@ -83,7 +83,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-03-02',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute elephant looking for a home',
     category: 'in good hands',
   },
@@ -96,7 +96,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-04-18',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute lion looking for a home',
     category: 'lost/found',
   },
@@ -109,7 +109,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2016-09-01',
-    gender: 'male',
+    sex: 'male',
     description: 'Сute fox looking for a home',
     category: 'my ads',
   },
@@ -122,7 +122,7 @@ const petsData = [
 
     place: 'Chernivtsi',
     dateOfBirth: '2023-08-06',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute blue whale looking for a home',
     category: 'in good hands',
   },
@@ -135,7 +135,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-11-10',
-    gender: 'male',
+    sex: 'male',
     description: 'Сute rabbit looking for a home',
     category: 'favorite ads',
   },
@@ -148,7 +148,7 @@ const petsData = [
 
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-01-30',
-    gender: 'female',
+    sex: 'female',
     description: 'Сute hedgehog looking for a home',
     category: 'in good hands',
   },
@@ -160,7 +160,7 @@ const petsData = [
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     place: 'Zaporizhzhia',
     dateOfBirth: '2020-12-16',
-    gender: 'male',
+    sex: 'male',
     description: 'Сute fish looking for a home',
     category: 'lost/found',
   },
