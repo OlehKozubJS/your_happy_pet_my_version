@@ -8,6 +8,7 @@ const AgeForm = ({ onChange }) => {
       upToTwo: upToTwoSelect,
       fromTwo: fromTwoSelect,
     };
+    console.log(ageData);
     onChange(ageData);
   };
 
