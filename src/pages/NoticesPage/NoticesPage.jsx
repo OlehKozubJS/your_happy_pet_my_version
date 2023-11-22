@@ -35,7 +35,7 @@ const petsData = [
     breed: 'lazy',
     price: '50$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Morbi a ipsum scelerisque, dapibus arcu et, faucibus nulla',
     category: 'lost/found',
   },
   {
@@ -50,7 +50,7 @@ const petsData = [
     breed: 'sneaky',
     price: '100$',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Etiam vitae ex at purus interdum congue',
     category: 'favorite ads',
   },
   {
@@ -65,7 +65,7 @@ const petsData = [
     breed: 'clumsy',
     price: '0$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Quisque dignissim augue sed imperdiet consectetur',
     category: 'my ads',
   },
   {
@@ -80,7 +80,7 @@ const petsData = [
     breed: 'scary',
     price: '50$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Vivamus dapibus sed felis in faucibus.',
     category: 'sell',
   },
   {
@@ -95,7 +95,7 @@ const petsData = [
     breed: 'big',
     price: '100$',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Mauris congue metus eget libero ornare suscipit.',
     category: 'in good hands',
   },
   {
@@ -110,7 +110,7 @@ const petsData = [
     breed: 'brave',
     price: '0$',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Donec finibus rhoncus mauris porta euismod.',
     category: 'lost/found',
   },
   {
@@ -125,7 +125,7 @@ const petsData = [
     breed: 'cunning',
     price: '50$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Fusce faucibus aliquet nunc, ut faucibus augue laoreet in.',
     category: 'my ads',
   },
   {
@@ -140,7 +140,7 @@ const petsData = [
     breed: 'giant',
     price: '100$',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Phasellus in dui feugiat, pharetra dolor at, rutrum tortor.',
     category: 'in good hands',
   },
   {
@@ -155,7 +155,8 @@ const petsData = [
     breed: 'fast',
     price: '0$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description:
+      'Pellentesque quis lectus feugiat, luctus purus ut, semper diam. Integer sagittis mattis dui.',
     category: 'favorite ads',
   },
   {
@@ -170,7 +171,8 @@ const petsData = [
     breed: 'spiky',
     price: '50$',
     favourite: false,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description:
+      'Fusce nec ornare lectus. Morbi id lorem cursus, congue ligula eget, imperdiet metus.',
     category: 'in good hands',
   },
   {
@@ -185,7 +187,7 @@ const petsData = [
     breed: 'floatable',
     price: '100$',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: 'Phasellus fermentum sed ligula sed porta.',
     category: 'lost/found',
   },
 ];
