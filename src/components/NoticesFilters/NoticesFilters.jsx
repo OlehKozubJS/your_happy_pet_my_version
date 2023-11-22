@@ -13,6 +13,22 @@ const NoticesFilters = () => {
     }
   };
 
+  const toggleAge = () => {
+    if (isByAgeOpen) {
+      setIsByAgeOpen(false);
+    } else {
+      setIsByAgeOpen(true);
+    }
+  };
+
+  const toggleGender = () => {
+    if (isByGenderOpen) {
+      setIsByGenderOpen(false);
+    } else {
+      setIsByGenderOpen(true);
+    }
+  };
+
   return (
     <div>
       <button onClick={toggleFilters}>Filters</button>
