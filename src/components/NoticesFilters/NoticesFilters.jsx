@@ -1,6 +1,13 @@
 import { useState } from 'react';
 
 const NoticesFilters = () => {
+  const calcYearDifference = oldDate => {
+    const newDate = new Date();
+    const dateDifference = new Date(newDate - oldDate);
+    const diffYears = dateDifference.getFullYear() - 1970;
+    return diffYears;
+  };
+
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
