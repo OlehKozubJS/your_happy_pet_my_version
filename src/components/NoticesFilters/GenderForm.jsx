@@ -2,7 +2,10 @@ const GenderForm = ({ onChange }) => {
   const handleChange = event => {
     event.preventDefault();
     const { femaleOption, maleOption } = event.currentTarget.elements;
-    const genderData = { female: femaleOption, male: maleOption };
+    const genderData = {
+      female: femaleOption.checked ? true : false,
+      male: maleOption.checked ? true : false,
+    };
     onChange(genderData);
   };
 
