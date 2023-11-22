@@ -41,6 +41,10 @@ const NoticesFilters = ({ onChange }) => {
     setGender(genderData);
   };
 
+  const handleFiltersData = () => {
+    onChange({ age, gender });
+  };
+
   return (
     <div onChange={handleFiltersData}>
       <button onClick={toggleFilters}>Filters</button>
