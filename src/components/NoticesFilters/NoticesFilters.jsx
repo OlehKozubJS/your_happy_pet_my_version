@@ -6,7 +6,7 @@ const NoticesFilters = ({ onChange }) => {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
-  const [age, detAge] = useState();
+  const [age, setAge] = useState(0);
   const [gender, setGender] = useState('female');
 
   const toggleFilters = () => {
