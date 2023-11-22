@@ -34,40 +34,25 @@ const NoticesFilters = () => {
   return (
     <div>
       <button onClick={toggleFilters}>Filters</button>
-      {isFiltersOpen &&
-        (<button onClick={toggleAge}>By age</button>)(
-          isByAgeOpen && (
-            <form>
-              <label>
-                <input type="checkbox" />
-                up to 1 year
-              </label>
-              <label>
-                <input type="checkbox" />
-                up to 2 years
-              </label>
-              <label>
-                <input type="checkbox" />
-                from 2 years
-              </label>
-            </form>
-          )
-        )(<button onClick={toggleGender}>By gender</button>)(
-          isByGenderOpen && (
-            <form>
-              <label>
-                <input type="checkbox" />
-                female
-              </label>
-              <label>
-                <input type="checkbox" />
-                male
-              </label>
-            </form>
-          )
-        )}
+      {isFiltersOpen && (
+        <div>
+          <button onClick={toggleAge}>By age</button>
+          {isByAgeOpen && <AgeForm />}
+          <button onClick={toggleGender}>By gender</button>
+          {isByGenderOpen && <GenderForm />}
+        </div>
+      )}
     </div>
   );
 };
 
 export { NoticesFilters };
+
+/*
+        
+<button onClick={toggleAge}>By age</button>
+{isByAgeOpen && <AgeForm />}
+<button onClick={toggleGender}>By gender</button>
+{isByGenderOpen && <GenderForm />}
+
+*/
