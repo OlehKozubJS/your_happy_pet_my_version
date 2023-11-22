@@ -9,6 +9,8 @@ import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 
 const petsData = [
   {
+    id: 'pet-01',
+    name: 'Dog',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -18,6 +20,8 @@ const petsData = [
     description: 'Сute dog looking for a home',
   },
   {
+    id: 'pet-02',
+    name: 'Cat',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
@@ -27,6 +31,8 @@ const petsData = [
     description: 'Сute cat looking for a home',
   },
   {
+    id: 'pet-03',
+    name: 'Mouse',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'favorite ads',
@@ -36,6 +42,8 @@ const petsData = [
     description: 'Сute mouse looking for a home',
   },
   {
+    id: 'pet-04',
+    name: 'Frog',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'my ads',
@@ -45,6 +53,8 @@ const petsData = [
     description: 'Сute frog looking for a home',
   },
   {
+    id: 'pet-05',
+    name: 'Bat',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'sell',
@@ -54,6 +64,8 @@ const petsData = [
     description: 'Сute bat looking for a home',
   },
   {
+    id: 'pet-06',
+    name: 'Elephant',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -63,6 +75,8 @@ const petsData = [
     description: 'Сute elephant looking for a home',
   },
   {
+    id: 'pet-07',
+    name: 'Lion',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
@@ -72,6 +86,8 @@ const petsData = [
     description: 'Сute lion looking for a home',
   },
   {
+    id: 'pet-08',
+    name: 'Fox',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'my ads',
@@ -81,6 +97,8 @@ const petsData = [
     description: 'Сute fox looking for a home',
   },
   {
+    id: 'pet-09',
+    name: 'Blue Whale',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -90,6 +108,8 @@ const petsData = [
     description: 'Сute blue whale looking for a home',
   },
   {
+    id: 'pet-10',
+    name: 'Rabbit',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'favorite ads',
@@ -99,6 +119,8 @@ const petsData = [
     description: 'Сute rabbit looking for a home',
   },
   {
+    id: 'pet-11',
+    name: 'Hedgehog',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -108,6 +130,8 @@ const petsData = [
     description: 'Сute hedgehog looking for a home',
   },
   {
+    id: 'pet-12',
+    name: 'Fish',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
