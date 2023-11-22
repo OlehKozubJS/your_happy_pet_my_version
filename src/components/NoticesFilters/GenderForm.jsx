@@ -1,6 +1,12 @@
-const GenderForm = () => {
+const GenderForm = ({ onChange }) => {
+  const handleChange = event => {
+    event.preventDefault();
+    const genderData = Number(event.currentTarget.elements.ageSelect);
+    onChange(genderData);
+  };
+
   return (
-    <form>
+    <form onChange={handleChange}>
       <label>
         <input type="radio" name="genderSelect" value="female" />
         female
