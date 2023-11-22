@@ -33,6 +33,9 @@ const petsData = [
     sex: 'female',
     name: 'Cat',
     breed: 'lazy',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'lost/found',
   },
   {
@@ -45,6 +48,9 @@ const petsData = [
     sex: 'female',
     name: 'Mouse',
     breed: 'sneaky',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'favorite ads',
   },
   {
@@ -57,6 +63,9 @@ const petsData = [
     sex: 'female',
     name: 'Frog',
     breed: 'clumsy',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'my ads',
   },
   {
@@ -69,6 +78,9 @@ const petsData = [
     sex: 'male',
     name: 'Bat',
     breed: 'scary',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'sell',
   },
   {
@@ -81,6 +93,9 @@ const petsData = [
     sex: 'female',
     name: 'Elephant',
     breed: 'big',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
   {
@@ -93,6 +108,9 @@ const petsData = [
     sex: 'female',
     name: 'Lion',
     breed: 'brave',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'lost/found',
   },
   {
@@ -105,6 +123,9 @@ const petsData = [
     sex: 'male',
     name: 'Fox',
     breed: 'cunning',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'my ads',
   },
   {
@@ -117,6 +138,9 @@ const petsData = [
     sex: 'female',
     name: 'Blue Whale',
     breed: 'giant',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
   {
@@ -129,6 +153,9 @@ const petsData = [
     sex: 'male',
     name: 'Rabbit',
     breed: 'fast',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'favorite ads',
   },
   {
@@ -141,6 +168,9 @@ const petsData = [
     sex: 'female',
     name: 'Hedgehog',
     breed: 'spiky',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
   {
@@ -153,6 +183,9 @@ const petsData = [
     sex: 'male',
     name: 'Fish',
     breed: 'floatable',
+    price: '0$',
+    favourite: true,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'lost/found',
   },
 ];
