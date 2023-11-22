@@ -12,3 +12,5 @@ const GenderForm = () => {
     </form>
   );
 };
+
+export { GenderForm };
