@@ -31,7 +31,9 @@ const NoticesFilters = () => {
     }
   };
 
-  const select
+  const selectAge = () => {};
+
+  const selectGender = () => {};
 
   return (
     <div>
