@@ -1,12 +1,12 @@
 const AgeForm = ({ onChange }) => {
   const handleChange = event => {
     event.preventDefault();
-    const { upToOneSelect, upToTwoSelect, fromTwoSelect } =
+    const { upToOneOption, upToTwoOption, fromTwoOption } =
       event.currentTarget.elements;
     const ageData = {
-      upToOne: upToOneSelect.checked ? true : false,
-      upToTwo: upToTwoSelect.checked ? true : false,
-      fromTwo: fromTwoSelect.checked ? true : false,
+      upToOne: upToOneOption.checked ? true : false,
+      upToTwo: upToTwoOption.checked ? true : false,
+      fromTwo: fromTwoOption.checked ? true : false,
     };
     console.log(ageData);
     onChange(ageData);
@@ -15,15 +15,15 @@ const AgeForm = ({ onChange }) => {
   return (
     <form onInput={handleChange}>
       <label>
-        <input type="checkbox" name="upToOneSelect" value={true} />
+        <input type="checkbox" name="upToOneOption" />
         up to 1 year
       </label>
       <label>
-        <input type="checkbox" name="upToTwoSelect" value={true} />
+        <input type="checkbox" name="upToTwoOption" />
         up to 2 years
       </label>
       <label>
-        <input type="checkbox" name="fromTwoSelect" value={true} />
+        <input type="checkbox" name="fromTwoOption" />
         from 2 years
       </label>
     </form>
