@@ -4,9 +4,9 @@ const AgeForm = ({ onChange }) => {
     const { upToOneSelect, upToTwoSelect, fromTwoSelect } =
       event.currentTarget.elements;
     const ageData = {
-      upToOne: upToOneSelect,
-      upToTwo: upToTwoSelect,
-      fromTwo: fromTwoSelect,
+      upToOne: upToOneSelect.checked ? true : false,
+      upToTwo: upToTwoSelect.checked ? true : false,
+      fromTwo: fromTwoSelect.checked ? true : false,
     };
     console.log(ageData);
     onChange(ageData);
