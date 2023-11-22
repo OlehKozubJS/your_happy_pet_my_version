@@ -6,7 +6,7 @@ const GenderForm = ({ onChange }) => {
   };
 
   return (
-    <form onChange={handleChange}>
+    <form onInput={handleChange}>
       <label>
         <input type="radio" name="genderSelect" value="female" />
         female
