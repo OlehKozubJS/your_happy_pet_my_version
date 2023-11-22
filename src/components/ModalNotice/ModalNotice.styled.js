@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { theme } from 'utils/theme';
-const { fonts, fontSizes, fontWeights, colors, media } = theme;
+const { fonts, fontSizes, fontWeights, colors /*, media*/ } = theme;
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -30,7 +30,7 @@ export const Content = styled.div`
   overflow: auto;
   overflow-x: auto;
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     top: 50%;
     width: 681px;
     padding: 0;
@@ -69,7 +69,7 @@ export const Image = styled.img`
   object-fit: cover;
   border-radius: 0px 0px 40px 40px;
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     width: 262px;
     height: 298px;
     margin: 0;
@@ -86,7 +86,7 @@ export const ContainerInfo = styled.div`
   gap: 12px;
   flex-direction: column;
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     flex-direction: row;
     gap: 24px;
     padding: 32px 32px 24px;
@@ -105,7 +105,7 @@ export const BtnClose = styled.button`
   border: none;
   background-color: ${colors.transparent};
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     right: 19px;
     top: 16px;
   }
@@ -123,7 +123,7 @@ export const Title = styled.h2`
 
   color: ${colors.black};
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     font-size: 28px;
     line-height: 38px;
     width: 250px;
@@ -151,7 +151,7 @@ export const Item = styled.li`
 
   color: ${colors.black};
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     font-size: ${fontSizes[2]}px;
     line-height: 22px;
   }
@@ -171,7 +171,7 @@ export const Comment = styled.p`
 
   color: ${colors.black};
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     font-size: 16px;
     line-height: 24px;
     width: 618px;
@@ -209,7 +209,7 @@ export const ContactLink = styled.a`
     outline: none;
   }
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     width: 129px;
   }
 `;
@@ -250,7 +250,7 @@ export const AddToFav = styled.button`
     border-radius: 40px;
   }
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     width: 129px;
   }
 `;
@@ -261,7 +261,7 @@ export const BtnContainer = styled.div`
   gap: 8px;
   padding: 0 12px;
 
-  @media screen and (${media.tablet}) {
+  @media screen and (${/*media.tablet*/ `min-width: 768px`}) {
     flex-direction: row;
     gap: 17px;
     margin: 0 auto;
