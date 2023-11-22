@@ -18,6 +18,8 @@ const petsData = [
     sex: 'female',
     name: 'Dog',
     breed: 'friendly',
+    price: '0',
+    favourite: true,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
