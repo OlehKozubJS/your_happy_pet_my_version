@@ -10,11 +10,12 @@ import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 const petsData = [
   {
     id: 'pet-01',
-    name: 'Dog',
-    type: 'friendly',
+    category: 'in good hands',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
-    category: 'in good hands',
+    name: 'Dog',
+    type: 'friendly',
+
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-07-09',
     gender: 'female',
