@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { AgeForm } from './AgeForm';
 import { GenderForm } from './GenderForm';
 
-const NoticesFilters = () => {
+const NoticesFilters = ({ onChange }) => {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
+  const [] = useState(false);
+  const [] = useState();
 
   const toggleFilters = () => {
     if (isFiltersOpen) {
