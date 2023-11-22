@@ -1,4 +1,5 @@
-import { NoticesPage } from './pages/NoticesPage/NoticesPage';
+//import { NoticesPage } from './pages/NoticesPage/NoticesPage';
+import { NoticesFilters } from './components/NoticesFilters/NoticesFilters';
 
 export const App = () => {
   return (
@@ -12,7 +13,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework template
+      <NoticesFilters />
     </div>
   );
 };
