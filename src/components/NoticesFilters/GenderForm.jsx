@@ -8,11 +8,11 @@ const GenderForm = ({ onChange }) => {
   return (
     <form onInput={handleChange}>
       <label>
-        <input type="radio" name="genderSelect" value="female" />
+        <input type="checkbox" name="genderSelect" value="female" />
         female
       </label>
       <label>
-        <input type="radio" name="genderSelect" value="male" />
+        <input type="checkbox" name="genderSelect" value="male" />
         male
       </label>
     </form>
