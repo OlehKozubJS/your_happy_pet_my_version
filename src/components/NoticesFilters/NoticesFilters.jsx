@@ -51,12 +51,3 @@ const NoticesFilters = () => {
 };
 
 export { NoticesFilters };
-
-/*
-        
-<button onClick={toggleAge}>By age</button>
-{isByAgeOpen && <AgeForm />}
-<button onClick={toggleGender}>By gender</button>
-{isByGenderOpen && <GenderForm />}
-
-*/
