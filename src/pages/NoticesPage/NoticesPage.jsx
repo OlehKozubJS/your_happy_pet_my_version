@@ -11,6 +11,7 @@ const petsData = [
   {
     id: 'pet-01',
     name: 'Dog',
+    type: 'friendly',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
