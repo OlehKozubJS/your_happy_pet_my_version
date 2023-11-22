@@ -1,5 +1,5 @@
 const GenderForm = ({ onChange }) => {
-  const handleChange = event => {
+  const handleInput = event => {
     event.preventDefault();
     const { femaleOption, maleOption } = event.currentTarget.elements;
     const genderData = {
@@ -11,7 +11,7 @@ const GenderForm = ({ onChange }) => {
   };
 
   return (
-    <form onInput={handleChange}>
+    <form onInput={handleInput}>
       <label>
         <input type="checkbox" name="femaleOption" value={true} />
         female

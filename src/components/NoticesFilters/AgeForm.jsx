@@ -1,5 +1,5 @@
 const AgeForm = ({ onChange }) => {
-  const handleChange = event => {
+  const handleInput = event => {
     event.preventDefault();
     const { upToOneOption, upToTwoOption, fromTwoOption } =
       event.currentTarget.elements;
@@ -13,7 +13,7 @@ const AgeForm = ({ onChange }) => {
   };
 
   return (
-    <form onInput={handleChange}>
+    <form onInput={handleInput}>
       <label>
         <input type="checkbox" name="upToOneOption" />
         up to 1 year
