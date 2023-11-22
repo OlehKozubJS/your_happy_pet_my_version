@@ -5,6 +5,14 @@ const NoticesFilters = () => {
   const [isByAgeOpen, setIsByAgeOpen] = useState(false);
   const [isByGenderOpen, setIsByGenderOpen] = useState(false);
 
+  const toggleFilters = () => {
+    if (isFiltersOpen) {
+      setIsFiltersOpen(false);
+    } else {
+      setIsFiltersOpen(true);
+    }
+  };
+
   return (
     <div>
       <button onClick={toggleFilters}>Filters</button>
