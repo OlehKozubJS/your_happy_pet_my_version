@@ -20,7 +20,7 @@ const petsData = [
     breed: 'friendly',
     price: '0',
     favourite: true,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     category: 'in good hands',
   },
   {
@@ -32,7 +32,7 @@ const petsData = [
     place: 'Lviv',
     dateOfBirth: '2013-04-29',
     sex: 'female',
-    description: 'Сute cat looking for a home',
+    title: 'Сute cat looking for a home',
     category: 'lost/found',
   },
   {
@@ -45,7 +45,7 @@ const petsData = [
     place: 'Khmelnytskyi',
     dateOfBirth: '2015-03-13',
     sex: 'female',
-    description: 'Сute mouse looking for a home',
+    title: 'Сute mouse looking for a home',
     category: 'favorite ads',
   },
   {
@@ -58,7 +58,7 @@ const petsData = [
     place: 'Lviv',
     dateOfBirth: '2019-06-06',
     sex: 'female',
-    description: 'Сute frog looking for a home',
+    title: 'Сute frog looking for a home',
     category: 'my ads',
   },
   {
@@ -71,7 +71,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-02-24',
     sex: 'male',
-    description: 'Сute bat looking for a home',
+    title: 'Сute bat looking for a home',
     category: 'sell',
   },
   {
@@ -84,7 +84,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-03-02',
     sex: 'female',
-    description: 'Сute elephant looking for a home',
+    title: 'Сute elephant looking for a home',
     category: 'in good hands',
   },
   {
@@ -97,7 +97,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-04-18',
     sex: 'female',
-    description: 'Сute lion looking for a home',
+    title: 'Сute lion looking for a home',
     category: 'lost/found',
   },
   {
@@ -110,7 +110,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2016-09-01',
     sex: 'male',
-    description: 'Сute fox looking for a home',
+    title: 'Сute fox looking for a home',
     category: 'my ads',
   },
   {
@@ -123,7 +123,7 @@ const petsData = [
     place: 'Chernivtsi',
     dateOfBirth: '2023-08-06',
     sex: 'female',
-    description: 'Сute blue whale looking for a home',
+    title: 'Сute blue whale looking for a home',
     category: 'in good hands',
   },
   {
@@ -136,7 +136,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-11-10',
     sex: 'male',
-    description: 'Сute rabbit looking for a home',
+    title: 'Сute rabbit looking for a home',
     category: 'favorite ads',
   },
   {
@@ -149,7 +149,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-01-30',
     sex: 'female',
-    description: 'Сute hedgehog looking for a home',
+    title: 'Сute hedgehog looking for a home',
     category: 'in good hands',
   },
   {
@@ -161,7 +161,7 @@ const petsData = [
     place: 'Zaporizhzhia',
     dateOfBirth: '2020-12-16',
     sex: 'male',
-    description: 'Сute fish looking for a home',
+    title: 'Сute fish looking for a home',
     category: 'lost/found',
   },
 ];
