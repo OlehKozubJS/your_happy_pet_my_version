@@ -6,7 +6,6 @@ const GenderForm = ({ onChange }) => {
       female: femaleOption.checked ? true : false,
       male: maleOption.checked ? true : false,
     };
-    console.log(genderData);
     onChange(genderData);
   };
 
