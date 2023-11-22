@@ -46,11 +46,13 @@ export const ModalNoticeMore = ({
     if (!isLoggedIn) {
       toast.error('You need to sign in');
     } else {
+      /*
       dispatch(
         favoriteNotice({
           id: _id,
         })
       );
+      */
       dispatch(closeModal());
     }
   };
