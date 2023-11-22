@@ -16,3 +16,5 @@ const AgeForm = () => {
     </form>
   );
 };
+
+export { AgeForm };
