@@ -23,6 +23,7 @@ const petsData = [
   {
     id: 'pet-02',
     name: 'Cat',
+    type: 'lazy',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
@@ -34,6 +35,7 @@ const petsData = [
   {
     id: 'pet-03',
     name: 'Mouse',
+    type: 'sneaky',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'favorite ads',
@@ -45,6 +47,7 @@ const petsData = [
   {
     id: 'pet-04',
     name: 'Frog',
+    type: 'clumsy',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'my ads',
@@ -56,6 +59,7 @@ const petsData = [
   {
     id: 'pet-05',
     name: 'Bat',
+    type: 'scary',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'sell',
@@ -67,6 +71,7 @@ const petsData = [
   {
     id: 'pet-06',
     name: 'Elephant',
+    type: 'big',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -78,6 +83,7 @@ const petsData = [
   {
     id: 'pet-07',
     name: 'Lion',
+    type: 'brave',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
@@ -89,6 +95,7 @@ const petsData = [
   {
     id: 'pet-08',
     name: 'Fox',
+    type: 'cunning',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'my ads',
@@ -100,6 +107,7 @@ const petsData = [
   {
     id: 'pet-09',
     name: 'Blue Whale',
+    type: 'giant',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -111,6 +119,7 @@ const petsData = [
   {
     id: 'pet-10',
     name: 'Rabbit',
+    type: 'fast',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'favorite ads',
@@ -122,6 +131,7 @@ const petsData = [
   {
     id: 'pet-11',
     name: 'Hedgehog',
+    type: 'spiky',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'in good hands',
@@ -133,6 +143,7 @@ const petsData = [
   {
     id: 'pet-12',
     name: 'Fish',
+    type: 'floatable',
     imageLink:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     category: 'lost/found',
