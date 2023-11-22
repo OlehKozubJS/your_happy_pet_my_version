@@ -60,7 +60,7 @@ export const ModalNoticeMore = ({
       <ContainerInfo>
         <ImageContainer>
           <Image src={avatar} alt="dog" />
-          <Type>{makeCategory(category)}</Type>
+          <Type>makeCategory(category)</Type>
         </ImageContainer>
         <div style={{ width: '321px', padding: '0 12px' }}>
           <Title>{title}</Title>
