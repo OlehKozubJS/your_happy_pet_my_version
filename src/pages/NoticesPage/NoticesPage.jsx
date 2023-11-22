@@ -24,7 +24,7 @@ const petsData = [
     place: 'Lviv',
     dateOfBirth: '2013-04-29',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute cat looking for a home',
   },
   {
     imageLink:
@@ -33,7 +33,7 @@ const petsData = [
     place: 'Khmelnytskyi',
     dateOfBirth: '2015-03-13',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute mouse looking for a home',
   },
   {
     imageLink:
@@ -42,7 +42,7 @@ const petsData = [
     place: 'Lviv',
     dateOfBirth: '2019-06-06',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute frog looking for a home',
   },
   {
     imageLink:
@@ -51,7 +51,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-02-24',
     gender: 'male',
-    description: 'Сute dog looking for a home',
+    description: 'Сute bat looking for a home',
   },
   {
     imageLink:
@@ -60,7 +60,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-03-02',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute elephant looking for a home',
   },
   {
     imageLink:
@@ -69,7 +69,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-04-18',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute lion looking for a home',
   },
   {
     imageLink:
@@ -78,7 +78,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2016-09-01',
     gender: 'male',
-    description: 'Сute dog looking for a home',
+    description: 'Сute fox looking for a home',
   },
   {
     imageLink:
@@ -87,7 +87,7 @@ const petsData = [
     place: 'Chernivtsi',
     dateOfBirth: '2023-08-06',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute blue whale looking for a home',
   },
   {
     imageLink:
@@ -96,7 +96,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2022-11-10',
     gender: 'male',
-    description: 'Сute dog looking for a home',
+    description: 'Сute rabbit looking for a home',
   },
   {
     imageLink:
@@ -105,7 +105,7 @@ const petsData = [
     place: 'Ivano - Frankivsk',
     dateOfBirth: '2023-01-30',
     gender: 'female',
-    description: 'Сute dog looking for a home',
+    description: 'Сute hedgehog looking for a home',
   },
   {
     imageLink:
@@ -114,7 +114,7 @@ const petsData = [
     place: 'Zaporizhzhia',
     dateOfBirth: '2020-12-16',
     gender: 'male',
-    description: 'Сute dog looking for a home',
+    description: 'Сute fish looking for a home',
   },
 ];
 
