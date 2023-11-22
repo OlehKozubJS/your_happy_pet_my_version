@@ -132,7 +132,7 @@ const NoticesPage = () => {
       <NoticesSearch />
       <div>
         <NoticesCategoriesNav />
-        <NoticesFilters />
+        <NoticesFilters onChange={data => console.log(data)} />
         <Link to="">Add pet</Link>
       </div>
       <NoticesCategoriesList data={petsData} />
