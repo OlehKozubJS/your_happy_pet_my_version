@@ -1,6 +1,10 @@
 const AgeForm = ({ onChange }) => {
+  const handleChange = event => {
+    const data = event.current;
+  };
+
   return (
-    <form>
+    <form onChange={handleChange}>
       <label>
         <input type="checkbox" name="ageSelect" value="0" />
         up to 1 year
