@@ -42,7 +42,7 @@ const NoticesFilters = ({ onChange }) => {
   };
 
   return (
-    <div>
+    <div onChange={handleFiltersData}>
       <button onClick={toggleFilters}>Filters</button>
       {isFiltersOpen && (
         <div>
