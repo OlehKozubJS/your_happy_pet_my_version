@@ -10,7 +10,6 @@ import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 const petsData = [
   {
     _id: 'pet-01',
-    category: 'in good hands',
     avatar:
       'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U',
     title: 'Сute dog looking for a home',
@@ -20,6 +19,7 @@ const petsData = [
     petBirthday: '2022-07-09',
     gender: 'female',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    category: 'in good hands',
   },
   {
     id: 'pet-02',
