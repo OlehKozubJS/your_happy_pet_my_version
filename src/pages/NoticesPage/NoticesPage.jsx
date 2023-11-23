@@ -200,13 +200,15 @@ const NoticesPage = () => {
     return diffYears;
   };
 
+  const handleFiltersData = data => console.log(data);
+
   return (
     <div>
       <h2>Find your favorite pet</h2>
 
       <div>
         <NoticesCategoriesNav />
-        <NoticesFilters onChange={data => console.log(data)} />
+        <NoticesFilters onChange={handleFiltersData} />
       </div>
       <NoticesCategoriesList petsData={petsData} />
     </div>
