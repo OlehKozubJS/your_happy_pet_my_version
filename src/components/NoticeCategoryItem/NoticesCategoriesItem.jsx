@@ -1,15 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NoticesCategoriesItem = ({
-  onAddToFavourite,
-  onDeleteFromFavourite,
-  description,
-  category,
-  place,
-  age,
-  gender,
-}) => {
+const NoticesCategoriesItem = ({ title, category, location, age, sex }) => {
   return (
     <div>
       <div>
