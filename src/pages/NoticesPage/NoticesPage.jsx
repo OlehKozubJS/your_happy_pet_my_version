@@ -192,6 +192,8 @@ const petsData = [
   },
 ];
 
+const IS_LOGGED_IN = false;
+
 const NoticesPage = () => {
   const calcYearDifference = oldDate => {
     const newDate = new Date();
@@ -200,6 +202,7 @@ const NoticesPage = () => {
     return diffYears;
   };
 
+  const handleCategoriesData = data => console.log(data);
   const handleFiltersData = data => console.log(data);
 
   return (
@@ -207,7 +210,10 @@ const NoticesPage = () => {
       <h2>Find your favorite pet</h2>
 
       <div>
-        <NoticesCategoriesNav />
+        <NoticesCategoriesNav
+          isLoggedIn={IS_LOGGED_IN}
+          onChange={handleCategoriesData}
+        />
         <NoticesFilters onChange={handleFiltersData} />
       </div>
       <NoticesCategoriesList petsData={petsData} />
