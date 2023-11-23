@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NoticesCategoriesNav = () => {
+const NoticesCategoriesNav = ({ isLoggedIn, onChange }) => {
   return (
     <form>
       <label>
@@ -23,18 +23,22 @@ const NoticesCategoriesNav = () => {
         />
         in good hands
       </label>
-      <label>
-        <input
-          type="radio"
-          name="noticesCategoriesNavItem"
-          value="favorite ads"
-        />
-        favorite ads
-      </label>
-      <label>
-        <input type="radio" name="noticesCategoriesNavItem" value="my ads" />
-        my ads
-      </label>
+      {isLoggedIn && (
+        <label>
+          <input
+            type="radio"
+            name="noticesCategoriesNavItem"
+            value="favorite ads"
+          />
+          favorite ads
+        </label>
+      )}
+      {isLoggedIn && (
+        <label>
+          <input type="radio" name="noticesCategoriesNavItem" value="my ads" />
+          my ads
+        </label>
+      )}
     </form>
   );
 };
