@@ -1,18 +1,25 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NoticesCategoriesItem = ({ title, category, location, age, sex }) => {
+const NoticesCategoriesItem = ({
+  title,
+  category,
+  avatar,
+  location,
+  age,
+  sex,
+}) => {
   return (
     <div>
       <div>
-        <img src="" alt="" />
+        <img src={avatar} alt="" />
         <div>{category}</div>
         <button onClick={onAddToFavourite}></button>
         <button onClick={onDeleteFromFavourite}></button>
         <div>
-          <div>{place}</div>
+          <div>{location}</div>
           <div>{age}</div>
-          <div>{gender}</div>
+          <div>{sex}</div>
         </div>
       </div>
       <div>
