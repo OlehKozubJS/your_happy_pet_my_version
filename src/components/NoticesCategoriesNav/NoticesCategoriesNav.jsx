@@ -3,7 +3,8 @@ import { useState } from 'react';
 const NoticesCategoriesNav = ({ isLoggedIn, onChange }) => {
   const handleInput = event => {
     event.preventDefault();
-    onChange(event.currentTarget.elements.categoryOption.value);
+    const categoryData = event.currentTarget.elements.categoryOption.value;
+    onChange(categoryData);
   };
 
   return (
