@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NoticesCategoriesItem = ({ petData }) => {
-  const { title, category, avatar, location, age, sex } = petData;
-
+const NoticesCategoriesItem = ({
+  title,
+  category,
+  avatar,
+  location,
+  age,
+  sex,
+}) => {
   return (
     <div>
       <div>
