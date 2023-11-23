@@ -196,6 +196,8 @@ const PETS_DATA = [
 const IS_LOGGED_IN = true;
 
 const NoticesPage = () => {
+  const [petsData, setPetsData] = useState(PETS_DATA);
+
   const calcYearDifference = oldDate => {
     const newDate = new Date();
     const dateDifference = new Date(newDate - oldDate);
