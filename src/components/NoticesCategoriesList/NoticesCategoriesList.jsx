@@ -5,7 +5,7 @@ const NoticesCategoriesList = ({ petsData }) => {
     <div>
       {petsData.map(petData => (
         <NoticesCategoriesItem
-          id={petData._id}
+          key={petData._id}
           title={petData.title}
           category={petData.category}
           avatar={petData.avatar}
