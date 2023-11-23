@@ -14,8 +14,8 @@ const NoticesCategoriesItem = ({
       <div>
         <img src={avatar} alt="" />
         <div>{category}</div>
-        <button onClick={onAddToFavourite}></button>
-        <button onClick={onDeleteFromFavourite}></button>
+        <button onClick="{onAddToFavourite}"></button>
+        <button onClick="{onDeleteFromFavourite}"></button>
         <div>
           <div>{location}</div>
           <div>{age}</div>
@@ -24,7 +24,7 @@ const NoticesCategoriesItem = ({
       </div>
       <div>
         <h3>{title}</h3>
-        <button onClick={onAddToFavourite}></button>
+        <button onClick="{onAddToFavourite}"></button>
       </div>
     </div>
   );
