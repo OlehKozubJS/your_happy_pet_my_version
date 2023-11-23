@@ -2,6 +2,7 @@
 //import { Link } from 'react-router-dom';
 
 const NoticesCategoriesItem = ({
+  isLoggedIn,
   title,
   category,
   avatar,
@@ -26,8 +27,8 @@ const NoticesCategoriesItem = ({
       <div>
         <img src={avatar} alt="" />
         <div>{category}</div>
-        <button onClick={onAddToFavourite}></button>
-        <button onClick={onDeleteFromFavourite}></button>
+        {isLoggedIn && <button onClick={onAddToFavourite}></button>}
+        {isLoggedIn && <button onClick={onDeleteFromFavourite}></button>}
         <div>
           <div>{location}</div>
           <div>{age}</div>
