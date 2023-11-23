@@ -192,7 +192,7 @@ const petsData = [
   },
 ];
 
-const IS_LOGGED_IN = false;
+const IS_LOGGED_IN = true;
 
 const NoticesPage = () => {
   const calcYearDifference = oldDate => {
@@ -216,7 +216,7 @@ const NoticesPage = () => {
         />
         <NoticesFilters onChange={handleFiltersData} />
       </div>
-      <NoticesCategoriesList petsData={petsData} />
+      <NoticesCategoriesList petsData={petsData} isLoggedIn={IS_LOGGED_IN} />
     </div>
   );
 };
