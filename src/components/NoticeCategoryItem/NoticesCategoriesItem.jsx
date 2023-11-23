@@ -9,13 +9,21 @@ const NoticesCategoriesItem = ({
   age,
   sex,
 }) => {
+  const onAddToFavourite = () => {
+    console.log('added to favourite');
+  };
+
+  const onDeleteFromFavourite = () => {
+    console.log('removed from favourite');
+  };
+
   return (
     <div>
       <div>
         <img src={avatar} alt="" />
         <div>{category}</div>
-        <button onClick="{onAddToFavourite}"></button>
-        <button onClick="{onDeleteFromFavourite}"></button>
+        <button onClick={onAddToFavourite}></button>
+        <button onClick={onDeleteFromFavourite}></button>
         <div>
           <div>{location}</div>
           <div>{age}</div>
@@ -24,7 +32,7 @@ const NoticesCategoriesItem = ({
       </div>
       <div>
         <h3>{title}</h3>
-        <button onClick="{onAddToFavourite}"></button>
+        <button onClick={onAddToFavourite}></button>
       </div>
     </div>
   );
