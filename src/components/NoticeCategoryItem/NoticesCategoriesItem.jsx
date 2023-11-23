@@ -23,7 +23,7 @@ const NoticesCategoriesItem = ({
         </div>
       </div>
       <div>
-        <h3>{description}</h3>
+        <h3>{title}</h3>
         <Link to="">Learn more</Link>
       </div>
     </div>
