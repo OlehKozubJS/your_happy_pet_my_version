@@ -17,6 +17,10 @@ const NoticesCategoriesItem = ({
     console.log('removed from favourite');
   };
 
+  const onpenModal = () => {
+    console.log('modal opened');
+  };
+
   return (
     <div>
       <div>
@@ -32,7 +36,7 @@ const NoticesCategoriesItem = ({
       </div>
       <div>
         <h3>{title}</h3>
-        <button onClick={onAddToFavourite}></button>
+        <button onClick={onpenModal}></button>
       </div>
     </div>
   );
