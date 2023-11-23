@@ -3,14 +3,8 @@ import { NoticesCategoriesItem } from '../../components/NoticeCategoryItem/Notic
 const NoticesCategoriesList = ({ petsData }) => {
   return (
     <div>
-      {items.map(item => (
-        <NoticesCategoriesItem
-          description={item.description}
-          category={item.category}
-          place={item.place}
-          age={item.age}
-          gender={item.gender}
-        />
+      {petsData.map(petData => (
+        <NoticesCategoriesItem petData={petData} />
       ))}
     </div>
   );
