@@ -27,8 +27,12 @@ const NoticesCategoriesItem = ({
       <div>
         <img src={avatar} alt="" />
         <div>{category}</div>
-        {isLoggedIn && <button onClick={onAddToFavourite}></button>}
-        {isLoggedIn && <button onClick={onDeleteFromFavourite}></button>}
+        {isLoggedIn && (
+          <button onClick={onAddToFavourite}>Add to favourite</button>
+        )}
+        {isLoggedIn && (
+          <button onClick={onDeleteFromFavourite}>Remove from favourite</button>
+        )}
         <div>
           <div>{location}</div>
           <div>{age}</div>
