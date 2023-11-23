@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const NoticesCategoriesNav = ({ isLoggedIn, onChange }) => {
   const handleInput = event => {
     event.preventDefault();
