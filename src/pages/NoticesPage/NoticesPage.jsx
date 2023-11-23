@@ -7,7 +7,7 @@ import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/Noti
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
 
-const petsData = [
+const PETS_DATA = [
   {
     _id: 'pet-01',
     avatar:
