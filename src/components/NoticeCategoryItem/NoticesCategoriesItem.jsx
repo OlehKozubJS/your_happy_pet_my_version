@@ -24,7 +24,7 @@ const NoticesCategoriesItem = ({
       </div>
       <div>
         <h3>{title}</h3>
-        <Link to="">Learn more</Link>
+        <button onClick={onAddToFavourite}></button>
       </div>
     </div>
   );
