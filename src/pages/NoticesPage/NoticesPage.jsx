@@ -2,8 +2,8 @@
 import { ModalNoticeMore } from '../../components/ModalNotice/ModalNoticeMore';
 import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
 import { Link } from 'react-router-dom';
-import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';
-import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';*/
+import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';*/
+import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
 
@@ -205,16 +205,17 @@ const NoticesPage = () => {
       <h2>Find your favorite pet</h2>
 
       <div>
+        <NoticesCategoriesNav />
         <NoticesFilters onChange={data => console.log(data)} />
       </div>
-      <NoticesCategoriesList data={petsData} />
+      <NoticesCategoriesList petsData={petsData} />
     </div>
   );
 };
 /*
 <NoticesSearch />
 
-<NoticesCategoriesNav />
+
 <Link to="">Add pet</Link>
 */
 export { NoticesPage };
