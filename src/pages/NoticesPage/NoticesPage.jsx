@@ -3,6 +3,7 @@ import { ModalNoticeMore } from '../../components/ModalNotice/ModalNoticeMore';
 import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
 import { Link } from 'react-router-dom';
 import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';*/
+import { useState } from 'react';
 import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
