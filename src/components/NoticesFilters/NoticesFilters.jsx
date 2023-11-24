@@ -43,7 +43,7 @@ const NoticesFilters = ({ onChange }) => {
 
   useEffect(() => {
     onChange({ age, gender });
-  }, [age, gender, onChange]);
+  }, [age, gender]);
 
   return (
     <div>
