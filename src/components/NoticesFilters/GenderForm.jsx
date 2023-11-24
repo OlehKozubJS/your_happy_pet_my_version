@@ -1,7 +1,7 @@
 const GenderForm = ({ onChange }) => {
   const handleInput = event => {
     event.preventDefault();
-    const genderData = event.currentTarget.elements;
+    const genderData = event.currentTarget.elements.genderOption.value;
     onChange(genderData);
   };
 
