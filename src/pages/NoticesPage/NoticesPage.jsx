@@ -211,7 +211,8 @@ const NoticesPage = () => {
     setFiltersData(data);
   };
 
-  const calcYearDifference = oldDate => {
+  const calcYearDifference = oldDateString => {
+    const oldDate = new Date(oldDateString);
     const newDate = new Date();
     const dateDifference = new Date(newDate - oldDate);
     const diffYears = dateDifference.getFullYear() - 1970;
