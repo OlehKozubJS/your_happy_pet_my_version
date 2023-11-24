@@ -228,11 +228,6 @@ const NoticesPage = () => {
     };
     return ageFilterOptions[ageCategory];
   };
-  /*
-        (!categoriesData || pet.category === categoriesData) &&
-          isAgeCatagory(pet, filtersData.age) &&
-          (!filtersData.gender || pet.sex === filtersData.gender);
-*/
   useEffect(() => {
     const newEditedPetsData = petsData.filter(
       pet =>
