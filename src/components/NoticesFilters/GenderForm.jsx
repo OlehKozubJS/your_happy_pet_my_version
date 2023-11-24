@@ -12,15 +12,15 @@ const GenderForm = ({ onChange }) => {
   return (
     <form onInput={handleInput}>
       <label>
-        <input type="checkbox" name="femaleOption" value={true} />
+        <input type="checkbox" name="femaleOption" />
         female
       </label>
       <label>
-        <input type="checkbox" name="maleOption" value={true} />
+        <input type="checkbox" name="maleOption" />
         male
       </label>
       <label>
-        <input type="checkbox" name="anyGenderOption" value={true} />
+        <input type="checkbox" name="anyGenderOption" />
         any gender
       </label>
     </form>
