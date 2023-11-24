@@ -197,17 +197,10 @@ const IS_LOGGED_IN = true;
 
 const NoticesPage = () => {
   const [petsData, setPetsData] = useState(PETS_DATA);
-  const [categoriesData, setCategoriesData] = useState();
+  const [categoriesData, setCategoriesData] = useState("");
   const [filtersData, setFiltersData] = useState({
-    age: {
-      upToOne: false,
-      upToTwo: false,
-      fromTwo: false,
-    },
-    gender: {
-      female: false,
-      male: false,
-    },
+    age: "any age",
+    gender: "",
   });
 
   const calcYearDifference = oldDate => {
@@ -228,7 +221,7 @@ const NoticesPage = () => {
   const anyAge = age => {
     return true;
   };
-  //const
+  const
 
   const handleCategoriesData = data => console.log(data);
   const handleFiltersData = data => console.log(data);
