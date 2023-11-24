@@ -216,7 +216,18 @@ const NoticesPage = () => {
     const diffYears = dateDifference.getFullYear() - 1970;
     return diffYears;
   };
-
+  const upToOne = age => {
+    return age < 1;
+  };
+  const upToTwo = age => {
+    return age < 2;
+  };
+  const fromTwo = age => {
+    return age >= 2;
+  };
+  const anyAge = age => {
+    return true;
+  };
   //const
 
   const handleCategoriesData = data => console.log(data);
