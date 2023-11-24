@@ -26,7 +26,7 @@ const AgeForm = ({ onChange }) => {
         from 2 years
       </label>
       <label>
-        <input type="checkbox" name="upToOneOption" />
+        <input type="checkbox" name="anyAgeOption" />
         any age
       </label>
     </form>
