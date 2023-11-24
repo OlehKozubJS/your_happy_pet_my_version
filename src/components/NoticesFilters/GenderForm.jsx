@@ -16,7 +16,7 @@ const GenderForm = ({ onChange }) => {
         male
       </label>
       <label>
-        <input type="radio" name="genderOption" value="" checked />
+        <input type="radio" name="genderOption" value="" defaultChecked />
         any gender
       </label>
     </form>
