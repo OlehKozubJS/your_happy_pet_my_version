@@ -1,4 +1,17 @@
 const AgeForm = ({ onChange }) => {
+  const upToOne = age => {
+    return age < 1;
+  };
+  const upToTwo = age => {
+    return age < 2;
+  };
+  const fromTwo = age => {
+    return age >= 2;
+  };
+  const anyAge = age => {
+    return true;
+  };
+
   const handleInput = event => {
     event.preventDefault();
     const ageData = event.currentTarget.elements.ageOption.value;
