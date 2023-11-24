@@ -3,7 +3,7 @@ import { ModalNoticeMore } from '../../components/ModalNotice/ModalNoticeMore';
 import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
 import { Link } from 'react-router-dom';
 import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';*/
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
@@ -228,6 +228,20 @@ const NoticesPage = () => {
     };
     return ageFilterOptions[ageCategory];
   };
+  /*
+        (!categoriesData || pet.category === categoriesData) &&
+          isAgeCatagory(pet, filtersData.age) &&
+          (!filtersData.gender || pet.sex === filtersData.gender);
+*/
+  useEffect(() => {
+    const newEditedPetsData = petsData.filter(
+      pet =>
+        (!categoriesData || pet.category === categoriesData) &&
+        isAgeCatagory(pet, filtersData.age) &&
+        (!filtersData.gender || pet.sex === filtersData.gender)
+    );
+    setEditedPetsData(newEditedPetsData);
+  }, [petsData, categoriesData, filtersData]);
 
   return (
     <div>
@@ -240,7 +254,10 @@ const NoticesPage = () => {
         />
         <NoticesFilters onChange={handleFiltersData} />
       </div>
-      <NoticesCategoriesList petsData={petsData} isLoggedIn={IS_LOGGED_IN} />
+      <NoticesCategoriesList
+        petsData={editedPetsData}
+        isLoggedIn={IS_LOGGED_IN}
+      />
     </div>
   );
 };
