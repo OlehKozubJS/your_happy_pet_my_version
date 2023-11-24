@@ -8,7 +8,7 @@ const NoticesCategoriesNav = ({ isLoggedIn, onChange }) => {
   return (
     <form onInput={handleInput}>
       <label>
-        <input type="radio" name="categoryOption" value="" checked />
+        <input type="radio" name="categoryOption" value="" defaultChecked />
         all categories
       </label>
       <label>
