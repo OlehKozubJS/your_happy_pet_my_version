@@ -202,6 +202,7 @@ const NoticesPage = () => {
     age: 'any age',
     gender: '',
   });
+  const [editedPetsData, setEditedPetsData] = useState(PETS_DATA);
 
   const calcYearDifference = oldDate => {
     const newDate = new Date();
