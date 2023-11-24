@@ -20,7 +20,7 @@ const AgeForm = ({ onChange }) => {
         from 2 years
       </label>
       <label>
-        <input type="radio" name="ageOption" value="anyAge" checked />
+        <input type="radio" name="ageOption" value="anyAge" defaultChecked />
         any age
       </label>
     </form>
