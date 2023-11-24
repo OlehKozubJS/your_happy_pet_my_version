@@ -8,6 +8,10 @@ const NoticesCategoriesNav = ({ isLoggedIn, onChange }) => {
   return (
     <form onInput={handleInput}>
       <label>
+        <input type="radio" name="categoryOption" value="all" />
+        all
+      </label>
+      <label>
         <input type="radio" name="categoryOption" value="sell" />
         sell
       </label>
