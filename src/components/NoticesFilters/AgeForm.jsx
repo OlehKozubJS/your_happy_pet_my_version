@@ -25,6 +25,10 @@ const AgeForm = ({ onChange }) => {
         <input type="checkbox" name="fromTwoOption" />
         from 2 years
       </label>
+      <label>
+        <input type="checkbox" name="upToOneOption" />
+        any age
+      </label>
     </form>
   );
 };
