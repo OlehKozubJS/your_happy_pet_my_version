@@ -197,10 +197,10 @@ const IS_LOGGED_IN = true;
 
 const NoticesPage = () => {
   const [petsData, setPetsData] = useState(PETS_DATA);
-  const [categoriesData, setCategoriesData] = useState("");
+  const [categoriesData, setCategoriesData] = useState('');
   const [filtersData, setFiltersData] = useState({
-    age: "any age",
-    gender: "",
+    age: 'any age',
+    gender: '',
   });
 
   const calcYearDifference = oldDate => {
@@ -209,19 +209,17 @@ const NoticesPage = () => {
     const diffYears = dateDifference.getFullYear() - 1970;
     return diffYears;
   };
-  const upToOne = age => {
-    return age < 1;
+
+  const isAgeCatagory = (item, ageCategory) => {
+    const age = calcYearDifference(item.petBirthday);
+    const ageFilterOptions = {
+      upToOne: age < 1,
+      upToTwo: age < 2,
+      fromTwo: age >= 2,
+      anyAge: true,
+    };
+    return ageFilterOptions[ageCategory];
   };
-  const upToTwo = age => {
-    return age < 2;
-  };
-  const fromTwo = age => {
-    return age >= 2;
-  };
-  const anyAge = age => {
-    return true;
-  };
-  const
 
   const handleCategoriesData = data => console.log(data);
   const handleFiltersData = data => console.log(data);
