@@ -204,6 +204,13 @@ const NoticesPage = () => {
   });
   const [editedPetsData, setEditedPetsData] = useState(PETS_DATA);
 
+  const handleCategoriesData = data => {
+    setCategoriesData(data);
+  };
+  const handleFiltersData = data => {
+    setFiltersData(data);
+  };
+
   const calcYearDifference = oldDate => {
     const newDate = new Date();
     const dateDifference = new Date(newDate - oldDate);
@@ -221,9 +228,6 @@ const NoticesPage = () => {
     };
     return ageFilterOptions[ageCategory];
   };
-
-  const handleCategoriesData = data => console.log(data);
-  const handleFiltersData = data => console.log(data);
 
   return (
     <div>
