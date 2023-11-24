@@ -197,13 +197,17 @@ const IS_LOGGED_IN = true;
 
 const NoticesPage = () => {
   const [petsData, setPetsData] = useState(PETS_DATA);
-
+  const [categoriesData, setCategoriesData] = useState();
+  const [filtersData, setFiltersData] = useState();
+ 
   const calcYearDifference = oldDate => {
     const newDate = new Date();
     const dateDifference = new Date(newDate - oldDate);
     const diffYears = dateDifference.getFullYear() - 1970;
     return diffYears;
   };
+
+  const 
 
   const handleCategoriesData = data => console.log(data);
   const handleFiltersData = data => console.log(data);
