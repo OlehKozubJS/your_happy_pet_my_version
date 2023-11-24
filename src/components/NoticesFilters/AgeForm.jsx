@@ -21,19 +21,19 @@ const AgeForm = ({ onChange }) => {
   return (
     <form onInput={handleInput}>
       <label>
-        <input type="radio" name="ageOption" value="-1" />
+        <input type="radio" name="ageOption" value={upToOne} />
         up to 1 year
       </label>
       <label>
-        <input type="radio" name="ageOption" value="-2" />
+        <input type="radio" name="ageOption" value={upToTwo} />
         up to 2 years
       </label>
       <label>
-        <input type="radio" name="ageOption" value="+2" />
+        <input type="radio" name="ageOption" value={fromTwo} />
         from 2 years
       </label>
       <label>
-        <input type="radio" name="ageOption" value="+0" />
+        <input type="radio" name="ageOption" value={anyAge} />
         any age
       </label>
     </form>
