@@ -229,4 +229,4 @@ const NoticesPage = () => {
 
 <Link to="">Add pet</Link>
 */
-export { NoticesPage };
+export default NoticesPage;
