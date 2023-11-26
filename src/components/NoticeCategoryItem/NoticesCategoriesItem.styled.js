@@ -11,7 +11,9 @@ const CategoryItem = styled.div`
   box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
 `;
 
-const CategoryItemHeader = styled.div``;
+const CategoryItemHeader = styled.div`
+  position: relative;
+`;
 
 const CategoryItemFooter = styled.div``;
 
@@ -36,7 +38,17 @@ const TitleHeader = styled.h3`
   font-size: 24px;
 `;
 
-const LearnMoreButton = styled.button``;
+const LearnMoreButton = styled.button`
+  display: flex;
+  width: 248px;
+  padding: 8px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: inherit;
+  border-radius: 40px;
+  border: 2px solid var(--unnamed, ${colors.blue});
+`;
 
 export {
   CategoryItem,
