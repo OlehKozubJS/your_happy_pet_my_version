@@ -16,9 +16,9 @@ const AddButton = styled.button``;
 
 const RemoveButton = styled.button``;
 
-const PetInfoOutput = styled.button``;
+const PetInfoOutput = styled.div``;
 
-const PetInfoOutputItem = styled.button``;
+const PetInfoOutputItem = styled.div``;
 
 const TitleHeader = styled.h3``;
 
