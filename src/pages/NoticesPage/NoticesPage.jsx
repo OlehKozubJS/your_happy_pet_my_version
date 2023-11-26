@@ -238,7 +238,8 @@ const NoticesPage = () => {
         (!filtersData.gender || pet.sex === filtersData.gender)
     );
     const newEditedPetsDataWithAge = newEditedPetsData.map(item => {
-      return { ...item, age: calcYearDifference(item.petBirthday) };
+      const petAge = calcYearDifference(item.petBirthday);
+      return { ...item, age: `${petAge} year${petAge === 1 && 's'}` };
     });
     setEditedPetsData(newEditedPetsDataWithAge);
   }, [petsData, categoriesData, filtersData]);
