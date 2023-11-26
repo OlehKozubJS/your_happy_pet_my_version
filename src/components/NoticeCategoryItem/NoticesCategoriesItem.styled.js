@@ -1,14 +1,24 @@
 import styled from '@emotion/styled';
 import { theme } from 'utils/theme';
-const { fonts, fontSizes, fontWeights, colors /*, media*/ } = theme;
+const { fonts, fontSizes, fontWeights, colors, radii } = theme;
 
-const CategoryItem = styled.div``;
+const CategoryItem = styled.div`
+  width: 288px;
+  height: 456px;
+  border-radius: 0px 0px 40px 40px;
+  background: var(--, #fff);
+
+  box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
+`;
 
 const CategoryItemHeader = styled.div``;
 
 const CategoryItemFooter = styled.div``;
 
-const CategoryItemImage = styled.img``;
+const CategoryItemImage = styled.img`
+  width: 100%;
+  height: 288px;
+`;
 
 const CategoryOutput = styled.div``;
 
@@ -20,7 +30,11 @@ const PetInfoOutput = styled.div``;
 
 const PetInfoOutputItem = styled.div``;
 
-const TitleHeader = styled.h3``;
+const TitleHeader = styled.h3`
+  color: var(--, #111);
+  font-family: ${fonts.bold};
+  font-size: 24px;
+`;
 
 const LearnMoreButton = styled.button``;
 
