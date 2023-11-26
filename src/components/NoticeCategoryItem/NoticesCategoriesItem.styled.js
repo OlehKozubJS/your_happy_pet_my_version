@@ -86,10 +86,25 @@ const RemoveButton = styled.button`
 
 const PetInfoOutput = styled.div`
   position: absolute;
+  top: 248px;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
 `;
 
 const PetInfoOutputItem = styled.div`
-  position: absolute;
+  display: flex;
+  width: 80px;
+  padding: 2px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  border-radius: 16px;
+  background: #cce4fb;
 `;
 
 const TitleHeader = styled.h3`
