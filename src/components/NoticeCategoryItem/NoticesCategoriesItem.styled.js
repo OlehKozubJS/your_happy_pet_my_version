@@ -104,11 +104,7 @@ const PetInfoOutputItem = styled.div`
   gap: 4px;
 
   color: var(--, #111);
-  font-family: Manrope;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-family: ${fonts.semiBold}
   letter-spacing: 0.48px;
 
   border-radius: 16px;
