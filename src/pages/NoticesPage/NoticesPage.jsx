@@ -229,6 +229,7 @@ const NoticesPage = () => {
     };
     return ageFilterOptions[ageCategory];
   };
+
   useEffect(() => {
     const newEditedPetsData = petsData.filter(
       pet =>
