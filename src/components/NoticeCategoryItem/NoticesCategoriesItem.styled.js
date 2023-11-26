@@ -112,7 +112,7 @@ const PetInfoOutputItem = styled.div`
   letter-spacing: 0.48px;
 
   border-radius: 16px;
-  background: #cce4fb;
+  background: ${colors.blue_light};
 `;
 
 const TitleHeader = styled.h3`
