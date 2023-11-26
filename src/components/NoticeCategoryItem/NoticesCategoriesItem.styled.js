@@ -23,3 +23,17 @@ const PetInfoOutputItem = styled.button``;
 const TitleHeader = styled.h3``;
 
 const LearnMoreButton = styled.button``;
+
+export {
+  CategoryItem,
+  CategoryItemHeader,
+  CategoryItemFooter,
+  CategoryItemImage,
+  CategoryOutput,
+  AddButton,
+  RemoveButton,
+  PetInfoOutput,
+  PetInfoOutputItem,
+  TitleHeader,
+  LearnMoreButton,
+};
