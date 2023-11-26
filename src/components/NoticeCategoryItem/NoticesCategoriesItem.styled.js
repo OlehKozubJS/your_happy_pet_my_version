@@ -104,9 +104,9 @@ const PetInfoOutputItem = styled.div`
   gap: 4px;
 
   color: var(--, #111);
-  font-family: ${fonts.semiBold}
-  letter-spacing: 0.48px;
-
+ font-family: ${fonts.semiBold}
+  overflow-wrap: break-word;
+ 
   border-radius: 16px;
   background: ${colors.blue_light};
 `;
