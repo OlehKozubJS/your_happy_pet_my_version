@@ -1,27 +1,3 @@
-import { Suspense } from 'react';
-import { lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
-
-import PublicRoute from './PublicRoute/PublicRoute';
-import PrivateRoute from './PrivateRoute/PrivateRoute';
-
-import Loader from './components/Loader/Loader';
-
-import Layout from './components/Layout/Layout';
-// import NoticesCategoriesList from './components/NoticesCategoriesList/NoticesCategoriesList';
-// import AddPetPage from './pages/AddPetPage/AddPetPage';
-
-// const MainPage = lazy(() => import('./pages/MainPage/MainPage'));
-// const RegisterPage = lazy(() => import('./pages/RegisterPage/RegisterPage'));
-// const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
-// const UserPage = lazy(() => import('./pages/UserPage/UserPage'));
-// const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
-// const NoticesPage = lazy(() => import('./pages/NoticesPage/NoticesPage'));
-// const OurFriendsPage = lazy(() =>
-//   import('./pages/OurFriendsPage/OurFriendsPage')
-// );
-// const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
-
 export const App = () => {
   return (
     <>
