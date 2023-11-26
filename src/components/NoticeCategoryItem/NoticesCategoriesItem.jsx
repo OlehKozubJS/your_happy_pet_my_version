@@ -18,7 +18,7 @@ const NoticesCategoriesItem = ({
     console.log('removed from favourite');
   };
 
-  const onpenModal = () => {
+  const openModal = () => {
     console.log('modal opened');
   };
 
@@ -41,7 +41,7 @@ const NoticesCategoriesItem = ({
       </div>
       <div>
         <h3>{title}</h3>
-        <button onClick={onpenModal}></button>
+        <button onClick={openModal}></button>
       </div>
     </div>
   );
