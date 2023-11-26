@@ -47,7 +47,7 @@ const CategoryOutput = styled.div`
   leading-trim: both;
   text-edge: cap;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: ${fontSizes.s};
   font-style: normal;
   font-weight: ${fonts.medium};
   line-height: normal;
