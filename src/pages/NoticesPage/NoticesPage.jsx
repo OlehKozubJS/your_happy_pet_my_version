@@ -219,7 +219,7 @@ const NoticesPage = () => {
     return diffYears;
   };
 
-  const isAgeCatagory = (item, ageCategory) => {
+  const isAgeCategory = (item, ageCategory) => {
     const age = calcYearDifference(item.petBirthday);
     const ageFilterOptions = {
       upToOne: age < 1,
@@ -234,7 +234,7 @@ const NoticesPage = () => {
     const newEditedPetsData = petsData.filter(
       pet =>
         (!categoriesData || pet.category === categoriesData) &&
-        isAgeCatagory(pet, filtersData.age) &&
+        isAgeCategory(pet, filtersData.age) &&
         (!filtersData.gender || pet.sex === filtersData.gender)
     );
     setEditedPetsData(newEditedPetsData);
