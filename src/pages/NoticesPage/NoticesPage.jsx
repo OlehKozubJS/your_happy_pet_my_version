@@ -239,7 +239,8 @@ const NoticesPage = () => {
     );
     const newEditedPetsDataWithAge = newEditedPetsData.map(item => {
       const petAge = calcYearDifference(item.petBirthday);
-      return { ...item, age: `${petAge} year${!(petAge === 1) && 's'}` };
+      const petAgeString = `${petAge} year${!(petAge === 1) ? 's' : ''}`;
+      return { ...item, age: petAgeString };
     });
     setEditedPetsData(newEditedPetsDataWithAge);
   }, [petsData, categoriesData, filtersData]);
