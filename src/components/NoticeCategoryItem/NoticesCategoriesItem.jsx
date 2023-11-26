@@ -37,27 +37,29 @@ const NoticesCategoriesItem = ({
   };
 
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="" />
-        <div>{category}</div>
+    <CategoryItem>
+      <CategoryItemHeader>
+        <CategoryItemImage src={avatar} alt="" />
+        <CategoryOutput>{category}</CategoryOutput>
         {isLoggedIn && (
-          <button onClick={onAddToFavourite}>Add to favourite</button>
+          <AddButton onClick={onAddToFavourite}>Add to favourite</AddButton>
         )}
         {isLoggedIn && (
-          <button onClick={onDeleteFromFavourite}>Remove from favourite</button>
+          <RemoveButton onClick={onDeleteFromFavourite}>
+            Remove from favourite
+          </RemoveButton>
         )}
-        <div>
-          <div>{location}</div>
-          <div>{age}</div>
-          <div>{sex}</div>
-        </div>
-      </div>
-      <div>
-        <h3>{title}</h3>
-        <button onClick={openModal}></button>
-      </div>
-    </div>
+        <PetInfoOutput>
+          <PetInfoOutputItem>{location}</PetInfoOutputItem>
+          <PetInfoOutputItem>{age}</PetInfoOutputItem>
+          <PetInfoOutputItem>{sex}</PetInfoOutputItem>
+        </PetInfoOutput>
+      </CategoryItemHeader>
+      <CategoryItemHeader>
+        <TitleHeader>{title}</TitleHeader>
+        <LearnMoreButton onClick={openModal}>Learn More</LearnMoreButton>
+      </CategoryItemHeader>
+    </CategoryItem>
   );
 };
 
