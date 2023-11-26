@@ -15,7 +15,9 @@ const CategoryItemHeader = styled.div`
   position: relative;
 `;
 
-const CategoryItemFooter = styled.div``;
+const CategoryItemFooter = styled.div`
+  padding: 20px;
+`;
 
 const CategoryItemImage = styled.img`
   width: 100%;
@@ -33,12 +35,14 @@ const PetInfoOutput = styled.div``;
 const PetInfoOutputItem = styled.div``;
 
 const TitleHeader = styled.h3`
+  padding-block: none;
   color: var(--, #111);
   font-family: ${fonts.bold};
   font-size: 24px;
 `;
 
 const LearnMoreButton = styled.button`
+  margin-top: 20px;
   display: flex;
   width: 248px;
   padding: 8px 28px;
@@ -48,6 +52,26 @@ const LearnMoreButton = styled.button`
   background-color: inherit;
   border-radius: 40px;
   border: 2px solid var(--unnamed, ${colors.blue});
+
+  color: var(--unnamed, ${colors.blue});
+  font-family: ${fonts.semiBold};
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.64px;
+
+  :hover,
+  :focus {
+    background: ${colors.gradientBlue};
+    color: #fef9f9;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
 `;
 
 export {
