@@ -8,9 +8,7 @@ export const App = () => {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<NoticesPage />}></Route>
-        </Routes>
+        <NoticesPage />
       </Suspense>
     </>
   );
