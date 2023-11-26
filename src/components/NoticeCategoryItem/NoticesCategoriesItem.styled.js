@@ -103,6 +103,14 @@ const PetInfoOutputItem = styled.div`
   align-items: center;
   gap: 4px;
 
+  color: var(--, #111);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+
   border-radius: 16px;
   background: #cce4fb;
 `;
