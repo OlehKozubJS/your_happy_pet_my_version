@@ -1,6 +1,7 @@
 //import { useState } from 'react';
 //import { Link } from 'react-router-dom';
-import { HeartIcon } from '../../utils/icon';
+//import { HeartIcon } from '../../utils/icon';
+import icons from '../../images/symbol-defs.svg';
 
 import {
   CategoryItem,
@@ -44,14 +45,14 @@ const NoticesCategoriesItem = ({
         {isLoggedIn && (
           <AddButton onClick={onAddToFavourite}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <use xlinkHref={HeartIcon} />
+              <use xlinkHref={`${icons}#heart`} />
             </svg>
           </AddButton>
         )}
         {isLoggedIn && (
           <RemoveButton onClick={onDeleteFromFavourite}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <use xlinkHref={HeartIcon} />
+              <use xlinkHref={`${icons}#trash-2`} />
             </svg>
           </RemoveButton>
         )}

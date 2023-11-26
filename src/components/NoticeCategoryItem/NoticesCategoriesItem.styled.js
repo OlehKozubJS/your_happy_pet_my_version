@@ -63,7 +63,10 @@ const AddButton = styled.button`
 
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius: ${radii.round};
@@ -77,7 +80,10 @@ const RemoveButton = styled.button`
 
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius: ${radii.round};
