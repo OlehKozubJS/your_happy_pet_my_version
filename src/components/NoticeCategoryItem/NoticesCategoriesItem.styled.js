@@ -13,6 +13,8 @@ const CategoryItem = styled.div`
 
 const CategoryItemHeader = styled.div`
   position: relative;
+  width: 100%;
+  height: 288px;
 `;
 
 const CategoryItemFooter = styled.div`
@@ -20,19 +22,75 @@ const CategoryItemFooter = styled.div`
 `;
 
 const CategoryItemImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 288px;
 `;
 
-const CategoryOutput = styled.div``;
+const CategoryOutput = styled.div`
+  position: absolute;
+  top: 16px;
+  left: 0;
 
-const AddButton = styled.button``;
+  display: flex;
+  width: 126px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 
-const RemoveButton = styled.button``;
+  color: var(--, #111);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: ${fonts.medium};
+  line-height: normal;
 
-const PetInfoOutput = styled.div``;
+  border-radius: 0px 16px 16px 0px;
+  background: var(--blue-light, ${colors.blue_light});
+`;
 
-const PetInfoOutputItem = styled.div``;
+const AddButton = styled.button`
+  position: absolute;
+  top: 16px;
+  right: 12px;
+
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: ${radii.round};
+  background: var(--blue-light, ${colors.blue_light});
+`;
+
+const RemoveButton = styled.button`
+  position: absolute;
+  top: 64px;
+  right: 12px;
+
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: ${radii.round};
+  background: var(--blue-light, ${colors.blue_light});
+`;
+
+const PetInfoOutput = styled.div`
+  position: absolute;
+`;
+
+const PetInfoOutputItem = styled.div`
+  position: absolute;
+`;
 
 const TitleHeader = styled.h3`
   padding-block: none;
