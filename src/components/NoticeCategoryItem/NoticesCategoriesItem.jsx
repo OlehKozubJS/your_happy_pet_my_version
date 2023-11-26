@@ -1,6 +1,20 @@
 //import { useState } from 'react';
 //import { Link } from 'react-router-dom';
 
+import {
+  CategoryItem,
+  CategoryItemHeader,
+  CategoryItemFooter,
+  CategoryItemImage,
+  CategoryOutput,
+  AddButton,
+  RemoveButton,
+  PetInfoOutput,
+  PetInfoOutputItem,
+  LearnMoreButton,
+  TitleHeader,
+} from './NoticesCategoriesItem.styled';
+
 const NoticesCategoriesItem = ({
   isLoggedIn,
   title,
