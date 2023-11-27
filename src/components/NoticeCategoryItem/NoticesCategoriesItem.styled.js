@@ -153,7 +153,8 @@ const LearnMoreButton = styled.button`
 
   :hover,
   :focus {
-    background: ${colors.gradientBlue};
+    border: none;
+    background: linear-gradient(290deg, #419ef1 0%, #9bd0ff 107.89%);
     color: #fef9f9;
     font-family: ${fonts.bold};
     font-size: ${fontSizes.m};
@@ -161,7 +162,8 @@ const LearnMoreButton = styled.button`
     letter-spacing: 0.64px;
   }
 `;
-
+// ${colors.gradientBlue}
+//
 export {
   CategoryItem,
   CategoryItemHeader,
