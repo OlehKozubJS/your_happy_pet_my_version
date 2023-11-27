@@ -16,6 +16,8 @@ import {
 
 const NoticesCategoriesItem = ({
   id,
+  onAddToFavourite,
+  onDeleteFromFavourite,
   isLoggedIn,
   title,
   category,
