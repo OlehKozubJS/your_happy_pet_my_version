@@ -231,13 +231,13 @@ const NoticesPage = () => {
   };
 
   const onAddToFavourite = id => {
-    console.log('onAddToFavourite');
+    console.log('onAddToFavourite' + id);
   };
   const onDeleteFromFavourite = id => {
-    console.log('onDeleteFromFavourite');
+    console.log('onDeleteFromFavourite' + id);
   };
   const onLearnMore = id => {
-    console.log('onLearnMore');
+    console.log('onLearnMore' + id);
   };
 
   useEffect(() => {
