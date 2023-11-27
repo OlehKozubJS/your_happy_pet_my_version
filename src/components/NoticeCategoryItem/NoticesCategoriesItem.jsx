@@ -15,7 +15,7 @@ import {
 } from './NoticesCategoriesItem.styled';
 
 const NoticesCategoriesItem = ({
-id
+  id,
   isLoggedIn,
   title,
   category,
