@@ -1,8 +1,9 @@
 import { NoticesCategoriesItem } from '../../components/NoticeCategoryItem/NoticesCategoriesItem';
+import { CategoriesList } from './NoticesCategoriesList.styled';
 
 const NoticesCategoriesList = ({ isLoggedIn, petsData }) => {
   return (
-    <div>
+    <CategoriesList>
       {petsData.map(petData => (
         <NoticesCategoriesItem
           key={petData._id}
@@ -16,7 +17,7 @@ const NoticesCategoriesList = ({ isLoggedIn, petsData }) => {
           sex={petData.sex}
         />
       ))}
-    </div>
+    </CategoriesList>
   );
 };
 
