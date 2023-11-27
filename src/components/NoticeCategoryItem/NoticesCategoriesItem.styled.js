@@ -162,8 +162,7 @@ const LearnMoreButton = styled.button`
     letter-spacing: 0.64px;
   }
 `;
-// ${colors.gradientBlue}
-//
+
 export {
   CategoryItem,
   CategoryItemHeader,
