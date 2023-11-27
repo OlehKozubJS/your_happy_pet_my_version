@@ -1,6 +1,3 @@
-//import { useState } from 'react';
-//import { Link } from 'react-router-dom';
-//import { HeartIcon } from '../../utils/icon';
 import icons from '../../images/symbol-defs.svg';
 
 import {
