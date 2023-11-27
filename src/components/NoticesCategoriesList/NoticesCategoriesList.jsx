@@ -6,6 +6,7 @@ const NoticesCategoriesList = ({ isLoggedIn, petsData }) => {
       {petsData.map(petData => (
         <NoticesCategoriesItem
           key={petData._id}
+          id={petData._id}
           isLoggedIn={isLoggedIn}
           title={petData.title}
           category={petData.category}
