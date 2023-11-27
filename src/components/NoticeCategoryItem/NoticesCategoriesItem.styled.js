@@ -46,10 +46,9 @@ const CategoryOutput = styled.div`
   text-align: center;
   leading-trim: both;
   text-edge: cap;
-  font-family: Manrope;
+  font-family: ${fonts.medium};
   font-size: ${fontSizes.s};
   font-style: normal;
-  font-weight: ${fonts.medium};
   line-height: normal;
 
   border-radius: 0px 16px 16px 0px;
@@ -92,8 +91,8 @@ const RemoveButton = styled.button`
 
 const PetInfoOutput = styled.div`
   position: absolute;
-  top: 248px;
-  left: 0;
+  bottom: 12px;
+  left: 0px;
 
   width: 100%;
 
@@ -110,11 +109,21 @@ const PetInfoOutputItem = styled.div`
   gap: 4px;
 
   color: var(--, #111);
- font-family: ${fonts.semiBold}
+  font-family: ${fonts.semiBold};
   overflow-wrap: break-word;
- 
+
   border-radius: 16px;
   background: ${colors.blue_light};
+
+  overflow: hidden;
+  color: var(--, #111);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: ${fonts.semiBold};
+  font-size: ${fontSizes.xs};
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.48px;
 `;
 
 const TitleHeader = styled.h3`
@@ -138,9 +147,7 @@ const LearnMoreButton = styled.button`
 
   color: var(--unnamed, ${colors.blue});
   font-family: ${fonts.semiBold};
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+  font-size: ${fontSizes.m};
   line-height: normal;
   letter-spacing: 0.64px;
 
@@ -148,10 +155,8 @@ const LearnMoreButton = styled.button`
   :focus {
     background: ${colors.gradientBlue};
     color: #fef9f9;
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: ${fonts.bold};
+    font-size: ${fontSizes.m};
     line-height: normal;
     letter-spacing: 0.64px;
   }

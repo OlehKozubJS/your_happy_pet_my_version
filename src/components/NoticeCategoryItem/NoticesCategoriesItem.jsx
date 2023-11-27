@@ -37,10 +37,11 @@ const NoticesCategoriesItem = ({
   const openModal = () => {
     console.log('modal opened');
   };
-  //        <CategoryItemImage src={avatar} alt="" />
+
   return (
     <CategoryItem>
       <CategoryItemHeader>
+        <CategoryItemImage src={avatar} alt="" />
         <CategoryOutput>{category}</CategoryOutput>
         {isLoggedIn && (
           <AddButton onClick={onAddToFavourite}>
