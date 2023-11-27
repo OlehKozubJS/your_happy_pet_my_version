@@ -4,7 +4,7 @@ const CategoriesList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-evenly;
+  row-gap: 24px;
 `;
 
 export { CategoriesList };
