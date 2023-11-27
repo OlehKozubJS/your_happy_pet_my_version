@@ -26,11 +26,11 @@ const NoticesCategoriesItem = ({
   age,
   sex,
 }) => {
-  const onAddToFavourite = () => {
+  const handleAddToFavourite = () => {
     console.log('added to favourite');
   };
 
-  const onDeleteFromFavourite = () => {
+  const handleDeleteFromFavourite = () => {
     console.log('removed from favourite');
   };
 
@@ -44,14 +44,14 @@ const NoticesCategoriesItem = ({
         <CategoryItemImage src={avatar} alt="" />
         <CategoryOutput>{category}</CategoryOutput>
         {isLoggedIn && (
-          <AddButton onClick={onAddToFavourite}>
+          <AddButton onClick={handleAddToFavourite}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <use xlinkHref={`${icons}#heart`} />
             </svg>
           </AddButton>
         )}
         {isLoggedIn && (
-          <RemoveButton onClick={onDeleteFromFavourite}>
+          <RemoveButton onClick={handleDeleteFromFavourite}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <use xlinkHref={`${icons}#trash-2`} />
             </svg>
