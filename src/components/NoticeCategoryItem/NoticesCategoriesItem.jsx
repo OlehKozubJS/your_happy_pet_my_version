@@ -18,6 +18,7 @@ const NoticesCategoriesItem = ({
   id,
   onAddToFavourite,
   onDeleteFromFavourite,
+  onLearnMore,
   isLoggedIn,
   title,
   category,
@@ -27,15 +28,15 @@ const NoticesCategoriesItem = ({
   sex,
 }) => {
   const handleAddToFavourite = () => {
-    console.log('added to favourite');
+    onAddToFavourite(id);
   };
 
   const handleDeleteFromFavourite = () => {
-    console.log('removed from favourite');
+    onDeleteFromFavourite(id);
   };
 
   const openModal = () => {
-    console.log('modal opened');
+    onLearnMore(id);
   };
 
   return (
