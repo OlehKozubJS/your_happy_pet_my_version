@@ -1,7 +1,7 @@
 import { toast } from 'react-hot-toast';
 import { VscHeart } from 'react-icons/vsc';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectAuth, selectIsLoggedIn } from 'redux/auth/auth-selectors';
+// import { selectAuth, selectIsLoggedIn } from 'redux/auth/authSelectors';
 import { closeModal } from 'redux/modal/modalReducer';
 // import { favoriteNotice } from 'redux/notices/noticesOperations';
 // import { makeCategory } from '../NoticeCategoryItem/NoticeCategoryItem';
@@ -46,13 +46,11 @@ export const ModalNoticeMore = ({
     if (!isLoggedIn) {
       toast.error('You need to sign in');
     } else {
-      /*
       dispatch(
         favoriteNotice({
           id: _id,
         })
       );
-      */
       dispatch(closeModal());
     }
   };
@@ -62,7 +60,7 @@ export const ModalNoticeMore = ({
       <ContainerInfo>
         <ImageContainer>
           <Image src={avatar} alt="dog" />
-          <Type>makeCategory(category)</Type>
+          <Type>{makeCategory(category)}</Type>
         </ImageContainer>
         <div style={{ width: '321px', padding: '0 12px' }}>
           <Title>{title}</Title>
