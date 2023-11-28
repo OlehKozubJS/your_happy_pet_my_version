@@ -1,10 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { selectToken } from 'redux/auth/selectors';
+import { selectToken } from '../../redux/auth/selectors';
 
 axios.defaults.baseURL = 'https://happy-pets-rest-api.onrender.com/';
 
-const setAuthHeader = token => {
+const setAuthHeader = (token) => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
@@ -17,7 +17,7 @@ export const fetchNotices = createAsyncThunk(
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
-  }
+  },
 );
 
 export const favoriteNotice = createAsyncThunk(
@@ -33,13 +33,13 @@ export const favoriteNotice = createAsyncThunk(
       setAuthHeader(token);
       const { data } = await axios.put(
         '/posts/favorite/' + update.id,
-        update.data
+        update.data,
       );
       return data.data.post;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
-  }
+  },
 );
 
 export const removeNotice = createAsyncThunk(
@@ -58,7 +58,7 @@ export const removeNotice = createAsyncThunk(
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
-  }
+  },
 );
 
 export const createNotice = createAsyncThunk(
@@ -77,5 +77,5 @@ export const createNotice = createAsyncThunk(
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
-  }
+  },
 );
