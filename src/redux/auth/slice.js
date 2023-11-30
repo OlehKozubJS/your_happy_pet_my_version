@@ -1,5 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { register, login, logout, update } from './operation';
+import {
+  register,
+  login,
+  logout,
+  update,
+  setFavoriteNotice,
+} from './operation';
 
 const initialState = {
   username: null,
@@ -32,22 +38,35 @@ const authSlice = createSlice({
       state.email = action.payload.email;
       state.token = action.payload.token;
       state.isLoggedIn = true;
+      state.profilePic = action.payload.profilePic;
+      state.isloading = false;
+      state.favoriteNoties = action.payload.favoriteNoties;
     },
     [logout.fulfilled](state, action) {
       state.username = null;
       state.email = null;
       state.token = null;
       state.isLoggedIn = false;
+      state.profilePic = null;
     },
     [logout.rejected](state, action) {
       state.username = null;
       state.email = null;
       state.token = null;
       state.isLoggedIn = false;
+      state.profilePic = null;
+    },
+    [update.pending](state, action) {
+      state.isLoading = true;
     },
     [update.fulfilled](state, action) {
       state.username = action.payload.username;
       state.email = action.payload.email;
+      state.profilePic = action.payload.profilePic;
+      state.isLoading = false;
+    },
+    [setFavoriteNotice.fulfilled](state, action) {
+      state.favoriteNoties = action.payload.favoriteNoties;
     },
   },
 });
