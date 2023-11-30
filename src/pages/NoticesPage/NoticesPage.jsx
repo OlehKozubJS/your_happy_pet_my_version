@@ -3,7 +3,8 @@
 //import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
 //import { Link } from 'react-router-dom';
 import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
+import { Outlet, useLocation, useParams } from 'react-router-dom';
 import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
@@ -20,8 +21,6 @@ import axios from 'axios';
 import VortexLoader from '../../components/VortexLoader/VortexLoader';
 import { setFavoriteNotice } from '../../redux/auth/operation';
 
-
-
 const NoticesPage = () => {
   const [petsData, setPetsData] = useState(null);
   const [categoriesData, setCategoriesData] = useState('');
@@ -30,11 +29,11 @@ const NoticesPage = () => {
     gender: '',
   });
   const [editedPetsData, setEditedPetsData] = useState(['']);
-  const [notice, setNotice] = useState(null)
-  const [isLoaded, setIsLoaded] = useState(false)
-  const dispatch = useDispatch()
+  const [notice, setNotice] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const dispatch = useDispatch();
   const token = useSelector((state) => state.auth.token);
-  const IS_LOGGED_IN = useSelector((state) => state.auth.isLoggedIn);;
+  const IS_LOGGED_IN = useSelector((state) => state.auth.isLoggedIn);
   const handleCategoriesData = (data) => {
     setCategoriesData(data);
   };
@@ -62,51 +61,55 @@ const NoticesPage = () => {
   };
 
   const onAddToFavourite = (noticeId) => {
-    console.log(noticeId)
+    console.log(noticeId);
     if (!IS_LOGGED_IN) {
       //МОДАЛКА ПРО ЗАЛОГИНИТСЯ
     }
-    dispatch(setFavoriteNotice({ token, noticeId }))
+    dispatch(setFavoriteNotice({ token, noticeId }));
   };
   const onDelete = async (id) => {
     console.log('onDeleteFromFavourite' + id);
     try {
-      const response = await axios.delete(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/notices/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const response = await axios.delete(
+        `${import.meta.env.VITE_BACKEND_BASE_URL}/api/notices/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      },);
+      );
       if (response.status === 200) {
-        setPetsData((prevPets) => prevPets.filter((notice) => notice._id !== id));
+        setPetsData((prevPets) =>
+          prevPets.filter((notice) => notice._id !== id),
+        );
       }
-
     } catch (error) {
-      console.error("Error fetching user:", error);
+      console.error('Error fetching user:', error);
       return null;
     }
-
   };
   const onLearnMore = (id) => {
-    setNotice(petsData.find(pet => pet._id === id));
+    setNotice(petsData.find((pet) => pet._id === id));
   };
   const onClose = () => {
-    setNotice(null)
-  }
+    setNotice(null);
+  };
 
   useEffect(() => {
     const getNotices = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_BASE_URL}/api/notices`);
+        const response = await axios.get(
+          `${import.meta.env.VITE_BACKEND_BASE_URL}/api/notices`,
+        );
         setPetsData(response.data.data.docs);
       } catch (error) {
-        console.error("Error fetching user:", error);
-        setIsLoaded(true)
+        console.error('Error fetching user:', error);
+        setIsLoaded(true);
         return null;
       }
     };
 
     getNotices();
-
   }, []);
 
   useEffect(() => {
@@ -123,13 +126,12 @@ const NoticesPage = () => {
         return { ...item, age: petAgeString };
       });
       setEditedPetsData(newEditedPetsDataWithAge);
-      setIsLoaded(true)
+      setIsLoaded(true);
     }
-
   }, [petsData, categoriesData, filtersData]);
 
   if (!isLoaded) {
-    return <VortexLoader />
+    return <VortexLoader />;
   }
   return (
     <div>
