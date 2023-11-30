@@ -32,8 +32,9 @@ const NoticePageContrtolsRight = styled.div`
 
 const AddPetLink = styled(NavLink)`
   text-decoration: none;
-  display: flex;
+  height: 25px;
   padding: 8px 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
