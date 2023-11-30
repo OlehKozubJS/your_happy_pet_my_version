@@ -276,7 +276,7 @@ const NoticesPage = () => {
           <AddPetLink to="http://localhost:5173/your_happy_pet/add-pet">
             Add pet
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <use xlinkHref={`${icons}#plus-small`} />
+              <use xlinkHref={`${icons}#plus-add-pet`} />
             </svg>
           </AddPetLink>
         </NoticePageContrtolsRight>
