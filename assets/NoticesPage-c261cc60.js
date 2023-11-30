@@ -1,4 +1,4 @@
-import{v as n,x as D,j as e,i as g,r as d,N as Y,y as P}from"./index-3e6d1cfa.js";const{fonts:U}=D,G=n.form`
+import{v as n,x as D,j as e,i as g,r as d,N as Y,y as P}from"./index-65cd55fa.js";const{fonts:U}=D,G=n.form`
   margin-top: 40px;
   margin-inline: auto;
   margin-bottom: 43px;
@@ -53,7 +53,7 @@ import{v as n,x as D,j as e,i as g,r as d,N as Y,y as P}from"./index-3e6d1cfa.js
   justify-content: center;
   align-items: center;
   gap: 8px;
-  height: 25px;
+  height: 35px;
   padding: 8px 16px;
 
   border-radius: 40px;
@@ -71,7 +71,7 @@ import{v as n,x as D,j as e,i as g,r as d,N as Y,y as P}from"./index-3e6d1cfa.js
   justify-content: center;
   align-items: center;
   gap: 8px;
-  height: 25px;
+  height: 35px;
   padding: 8px 16px;
 
   border-radius: 40px;
