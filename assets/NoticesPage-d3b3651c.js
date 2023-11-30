@@ -1,4 +1,4 @@
-import{v as n,x as D,j as e,i as u,r as d,N as Y,y as P}from"./index-3c0a2607.js";const{fonts:U}=D,G=n.form`
+import{v as n,x as D,j as e,i as u,r as d,N as Y,y as P}from"./index-bc06a088.js";const{fonts:U}=D,G=n.form`
   margin-top: 40px;
   margin-inline: auto;
   margin-bottom: 43px;
