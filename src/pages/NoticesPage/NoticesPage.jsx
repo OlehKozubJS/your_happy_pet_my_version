@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
-import { NavLink } from 'react-router-dom';
+import icons from '../../images/symbol-defs.svg';
 import {
   Header,
   NoticePageContrtols,
@@ -275,6 +275,9 @@ const NoticesPage = () => {
           <NoticesFilters onChange={handleFiltersData} />
           <AddPetLink to="http://localhost:5173/your_happy_pet/add-pet">
             Add pet
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <use xlinkHref={`${icons}#plus-small`} />
+            </svg>
           </AddPetLink>
         </NoticePageContrtolsRight>
       </NoticePageContrtols>
