@@ -1,4 +1,4 @@
-import{w as n,y as T,j as e,i as y,r as d,N as se,G as U,c as K,b as H,z as ae,n as re,A as Z,V as le,C as de,a as R}from"./index-e28cfa6d.js";const{fonts:ce}=T,pe=n.form`
+import{w as n,y as T,j as e,i as y,r as d,N as se,G as U,c as K,b as H,z as ae,n as re,A as Z,V as le,C as de,a as R}from"./index-1ace0192.js";const{fonts:ce}=T,pe=n.form`
   margin-top: 40px;
   margin-inline: auto;
   margin-bottom: 43px;
@@ -218,8 +218,9 @@ import{w as n,y as T,j as e,i as y,r as d,N as se,G as U,c as K,b as H,z as ae,n
   row-gap: 12px;
 `,Ie=n(se)`
   text-decoration: none;
-  display: flex;
+  height: 25px;
   padding: 8px 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
