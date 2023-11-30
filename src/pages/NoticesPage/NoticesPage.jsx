@@ -1,12 +1,19 @@
-import { ModalNotice } from '../../components/ModalNotice/ModalNotice';
-import { ModalNoticeMore } from '../../components/ModalNotice/ModalNoticeMore';
-import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
+//import { ModalNotice } from '../../components/ModalNotice/ModalNotice';
+//import { ModalNoticeMore } from '../../components/ModalNotice/ModalNoticeMore';
+//import { ModalNoticeRemove } from '../../components/ModalNotice/ModalNoticeRemove';
 //import { Link } from 'react-router-dom';
 import { NoticesSearch } from '../../components/NoticesSearch/NoticesSearch';
 import { useEffect, useState } from 'react';
 import { NoticesCategoriesNav } from '../../components/NoticesCategoriesNav/NoticesCategoriesNav';
 import { NoticesFilters } from '../../components/NoticesFilters/NoticesFilters';
 import { NoticesCategoriesList } from '../../components/NoticesCategoriesList/NoticesCategoriesList';
+import { NavLink } from 'react-router-dom';
+import {
+  Header,
+  NoticePageContrtols,
+  NoticePageContrtolsRight,
+  AddPetLink,
+} from './NoticesPage.styled';
 
 const PETS_DATA = [
   {
@@ -257,16 +264,20 @@ const NoticesPage = () => {
 
   return (
     <div>
-      <h2>Find your favorite pet</h2>
+      <Header>Find your favorite pet</Header>
       <NoticesSearch />
-      <div>
+      <NoticePageContrtols>
         <NoticesCategoriesNav
           isLoggedIn={IS_LOGGED_IN}
           onChange={handleCategoriesData}
         />
-        <NoticesFilters onChange={handleFiltersData} />
-        <button>Add pet</button>
-      </div>
+        <NoticePageContrtolsRight>
+          <NoticesFilters onChange={handleFiltersData} />
+          <AddPetLink to="http://localhost:5173/your_happy_pet/add-pet">
+            Add pet
+          </AddPetLink>
+        </NoticePageContrtolsRight>
+      </NoticePageContrtols>
       <NoticesCategoriesList
         petsData={editedPetsData}
         isLoggedIn={IS_LOGGED_IN}
@@ -274,9 +285,6 @@ const NoticesPage = () => {
         onDelete={onDelete}
         onLearnMore={onLearnMore}
       />
-      <ModalNotice />
-      <ModalNoticeMore />
-      <ModalNoticeRemove />
     </div>
   );
 };
